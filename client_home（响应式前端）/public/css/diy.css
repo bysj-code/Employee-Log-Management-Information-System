@@ -1,0 +1,3455 @@
+
+
+/* 自定义模块详情页编辑器样式未抽取、个人资料模块未排版 */
+body{
+    /* 给网页设置背景图片 */
+  /*  background-image: linear-gradient(to right, #ffffff,#789262); */
+    /* 指定背景图片覆盖整个页面 */
+   /* background-size: 100% 100%; */
+ /* position: relative; */
+}
+/* 首页内容区大盒子 */
+#root_demo {
+	/* margin-top: 12rem; */
+}
+/* 首页 轮播图 盒子 */
+
+#root_demo .swiper_img {
+    /* 圆角边框 */
+    border-radius: 20px  !important;
+    /* 边框阴影 */
+	/* border:0.0625rem solid  #ff9a00 !important; */
+    /* 外边距 */
+    /* margin: 10px 10px 10px 10px; */
+    /* 内边距 */
+    /* padding: 10px 10px 10px 10px; */
+    /* 内部字体颜色 */
+   /* color: #f9f9f9; */
+    /* 盒子透明度 */
+    /* opacity: 0.8; */
+    /* 背景颜色 */
+ /*   background-color: #649efd !important; */
+    /* 宽度 */
+    /* width: 100px; */
+    /* 高度 */
+    /* height: 100px !important; */
+    /* 裁剪 */
+  /* overflow: hidden;
+	width: 100%; */
+	
+	/* height: 25rem !important; */
+}
+/* ------------------------------------------------------ */
+
+/* 登陆以后 我的 -我的账户 */
+
+/* 左侧导航栏 */
+.card_menu .list_menu a{
+    /* 元素性质 */
+    display: block;
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 外边距 */
+    margin: 10px 10px 10px 10px;
+    /* 背景颜色 */
+    background-color:#8f8787 !important;
+    /* 阴影 */
+  /*  box-shadow: 0.1125rem 0.1125rem  #ff9a00 !important; */
+
+	
+}
+
+/* 鼠标移入效果 */
+.card_menu .list_menu a:hover{
+	 display: block;
+    /* 字体大小 */
+    font-size: 20px;
+    /* 字体加粗 */
+    font-weight: 600;
+    /* 字体颜色 */
+    color: #FFFFFF !important;
+	
+	
+}
+
+/* 左侧文字 */
+.card_menu .list_menu .left_span{
+    /* 字体颜色 */
+    color: #FFFFFF !important;
+    /* 字体倾斜 */
+    font-style:normal;
+}
+
+/* 右侧图标 */
+.card_menu .list_menu .right_span{
+    /* 向右浮动 */
+    float: right;
+    /* 字体颜色 */
+    color: #ebcbae !important;
+}
+
+
+/* 选中样式 */
+
+.menu_item.selected[data-v-1c9e0eb5]{
+    /* 背景颜色 */
+    background-color: #ebcbae !important;
+}
+
+/* ------------------------------------------------------ */
+
+/* 首页顶部导航 */
+.page_header .header_warp {
+    /* 圆角边框 */
+   border-radius: 20px;
+    /* 边框阴影 */
+ /*   box-shadow: 0.1125rem 0.1125rem  #ff9a00 !important; */
+    /* 外边距 */
+/* 	margin: 0.625rem auto; */
+    /* 内部字体颜色 */
+    color: #f9f9f9 !important;
+    /* 背景颜色 */
+    background:#8f8787 !important ;
+    /* 宽度 */
+   /* width: 100%; */
+	/* border: none !important; */
+
+	
+}
+.page_header .header_warp .search-box{
+	position: absolute;
+	top: 0px;
+	right:-300px;
+	width: 2rem;
+}
+/* 首页顶部导航 'logo' 字体样式 */
+
+.page_header .header_warp .logo {
+    /*文字摆放位置*/
+   /* text-align: left !important; */
+    /* 文字大小 */
+    /* font-size: 1.4rem !important; */
+    /* 文字颜色 */
+    color: #ebcbae;
+	width:30%;
+	/* margin-left: -20rem; */
+}
+
+/* 首页顶部导航 栏 字体样式 */
+
+.page_header .nav_list {
+    /*文字摆放位置*/
+   text-align: left !important;
+    /* 文字大小 */
+    /* font-size: 50px !important; */
+    /* font-weight: 600; */
+    /* 字体倾斜 */
+    /* font-style:oblique; */
+    /* 下划线 */
+    /* text-decoration:underline; */
+    /* 下划线颜色 */
+    /* text-decoration-color: #00a4ff; */
+    /* 文字颜色 */
+ /*   color: #000 !important;  */
+ background-color: #8f8787 !important ;
+}
+.page_header .nav_list li a{
+		/* border-right: 2px solid #a6e4e7;
+		height: 40px;
+		line-height: 40px; */
+		margin-right: 0.5rem;
+		
+}
+/* 首页顶部导航 栏 字体样式 hover效果*/
+
+.page_header .header_warp .nav_list a:hover {
+    /* 文字大小 */
+    font-size: 16px !important;
+    /* 文字颜色 */
+    color: #ebcbae !important;
+	
+	/* border-radius: 1.25rem; */
+/* 	border-right: 2px solid #a6e4e7; */
+	
+}
+
+/* 首页顶部导航 搜索input框*/
+
+.page_header .header_warp .search-box .search-txt {
+	/* 边框 */
+	border: 0.125rem solid #537791;
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 内部字体颜色 */
+    color: #537791 !important;
+}
+
+/* 首页顶部导航 搜索input框 右侧按钮*/
+
+.page_header .header_warp .search-box .search-btn {
+	/* 文字大小 */
+	font-size: 1.875rem !important;
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 外边距 */
+    margin: 10px 10px 10px 10px;
+    /* 内部字体颜色 */
+    color:  #ebcbae;
+    /* 背景颜色 */
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* 首页顶部导航 登录 盒子 */
+
+.page_header .header_warp .user {
+    /* 外边距 */
+  /*  margin: 0rem 0.8rem 0rem 0rem; */
+    /* 内边距 */
+    padding: 0rem;
+    /* 宽度 */
+    width: 6rem;
+    /* 高度 */
+    height: 4rem !important;
+    /* 布局 */
+/*    float: right !important; */
+    /*文字摆放位置*/
+    text-align: left !important;
+    /* 文字大小 */
+    font-size: 1rem !important;
+    /* 下划线 */
+/*    text-decoration:underline; */
+    /* 下划线颜色 */
+ /*   text-decoration-color: #f9f9f9 !important; */
+ color: #ebcbae !important;
+}
+
+/* 鼠标移入效果 */
+
+.page_header .header_warp .user a:hover {
+    /* 文字大小 */
+  /*  font-size: 20px !important; */
+    /* 文字颜色 */
+    color: #ebcbae !important;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* 登录页 左右两侧盒子 */
+
+#account_login .card {
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 边框阴影 */
+ /*   box-shadow: 0.1125rem 0.1125rem  #ff9a00 !important; */
+    /* 背景颜色 */
+   background-color: #F4F7F9;
+    /* 上边距 */
+    margin-top: 10px !important;
+	
+	}
+
+
+
+/* 登录页 左侧盒子 */
+
+#account_login .card .form_login {
+    /* 圆角边框 */
+    border-radius: 20px;
+	/* 背景颜色 */
+	/* background-color: #09B9E6; */
+	 /* 上边距 */
+	
+  border: 2px solid  #8f8787  !important;
+}
+
+/* 登录页 右侧盒子 */
+
+#account_login .card .more_nav {
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 边框阴影 */
+    /* box-shadow: 0px 0px 20px 10px #ccc; */
+    /* 外边距 */
+    /* margin: 10px 10px 10px 10px; */
+    /* 内边距 */
+    /* padding: 10px 10px 10px 10px; */
+    /* 内部字体颜色 */
+    /* color: #00A4FF; */
+    /* 盒子透明度 */
+    /* opacity: 0.8; */
+    /* 背景颜色 */
+    /* background-color: #000000 !important; */
+    /* 宽度 */
+    /* width: 100px; */
+    /* 高度 */
+    /* height: 100x; */
+	/* 背景颜色 */
+	/* background-color: #f6f7d7; */
+	 /* 边距 */
+/* 	margin: 10px, 50px, 10px, 50px; */
+	border: 2px solid  #ebcbae ;
+}
+
+/* 登录页 左侧盒子 用户名 等字段 */
+#account_login .form_login label{
+	font-size: 20px !important;
+	    /* 文字颜色 */
+	    color: #8f8787;
+	}
+
+
+/* 登录页 左侧盒子 用户名 input  */
+#account_login .form_login input{
+	/* 背景颜色 */
+	background-color: #FFFFFF !important;
+	/* 宽度 */
+	width: 100%;
+	/* 圆角边框 */
+	/* border-radius: 20px;	 */
+}
+
+
+
+
+/* 登录页 左侧盒子 登录按钮 *//* 登录页 右侧盒子 注册按钮 */
+
+
+#account_login .btn_item {
+    /* 圆角边框 */
+ /*   border-radius: 80px; */
+    /* 边框阴影 */
+    /* box-shadow: 0px 0px 20px 10px #ccc; */
+    /* 外边距 */
+   margin: 0 auto;
+    /* 内边距 */
+    /* padding: 10px 10px 10px 10px; */
+    /* 内部字体颜色 */
+    /* color: #00A4FF; */
+	/* 文字大小 */
+	font-size: 20px !important;
+    /* 盒子透明度 */
+    /* opacity: 0.8; */
+    /* 背景颜色 */
+    background-color:#ebcbae !important;
+    /* 宽度 */
+    width: 50%;
+    /* 高度 */
+    /* height: 100x; */
+}
+/* 注册页注册和登录按钮 */
+#account_register .btn_item {
+    /* 圆角边框 */
+ /*   border-radius: 80px; */
+    /* 边框阴影 */
+    /* box-shadow: 0px 0px 20px 10px #ccc; */
+    /* 外边距 */
+   margin: 0 auto;
+    /* 内边距 */
+    /* padding: 10px 10px 10px 10px; */
+    /* 内部字体颜色 */
+    /* color: #00A4FF; */
+	/* 文字大小 */
+	font-size: 20px !important;
+    /* 盒子透明度 */
+    /* opacity: 0.8; */
+    /* 背景颜色 */
+    background-color:#ebcbae !important;
+    /* 宽度 */
+    width: 50%;
+    /* 高度 */
+    /* height: 100x; */
+}
+/* 登录页 左侧盒子 忘记密码 */
+
+#account_login .btns_bottom .forgot_nav {
+    /*文字摆放位置*/
+    text-align: center !important;
+    /* 文字大小 */
+    font-size: 20px !important;
+    /* font-weight: 600; */
+    /* 字体倾斜 */
+    /* font-style:oblique; */
+    /* 下划线 */
+    /* text-decoration:underline; */
+    /* 下划线颜色 */
+   /* text-decoration-color: #f9f9f9; */
+    /* 文字颜色 */
+    color: #FFFFFF;
+	/* 边框 */
+ background-color:#ebcbae !important;
+	/* 宽度 */
+	width: 50%;
+	/* 圆角 */
+	/* border-radius: 1.25rem ; */
+	margin: 10px auto;
+	height: 2.8rem;
+	line-height: 2.8rem;
+	
+}
+
+/* 登录页 右侧盒子 没有帐户？ */
+
+#account_login .card .more_nav {
+    /*文字摆放位置*/
+    text-align: right !important;
+    /* 文字大小 */
+    font-size: 20px !important;
+    /* font-weight: 600; */
+    /* 字体倾斜 */
+    /* font-style:oblique; */
+    /* 下划线 */
+   /* text-decoration:underline; */
+    /* 下划线颜色 */
+   /* text-decoration-color: #f9f9f9; */
+    /* 文字颜色 */
+    color: #8f8787;
+}
+
+
+
+/* ----------------------------------------------------------- */
+
+/* 注册页  左右两侧外层框*/
+
+#account_register .container {
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 边框阴影 */
+    /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+    /* 外边距 */
+    /* margin: 10px 10px 10px 10px; */
+    /* 内边距 */
+    /* padding: 10px 10px 10px 10px; */
+    /* 内部字体颜色 */
+    color: #f9f9f9;
+    /* 盒子透明度 */
+    /* opacity: 0.8; */
+    /* 背景颜色 */
+    background-color: #F4F7F9 !important;
+    /* 宽度 */
+    /* width: 100px; */
+    /* 高度 */
+    /* height: 100x; */
+}
+
+/* 注册页  左框 外套框*/
+
+#account_register .card {
+	/* 圆角边框 */
+	   border-radius: 20px;
+	   /* 边框阴影 */
+	/*   box-shadow: 0.1125rem 0.1125rem  #ff9a00 !important; */
+	   /* 背景颜色 */
+	  background-color: #F4F7F9;
+	   /* 上边距 */
+	   margin-top: 10px !important;
+		
+		
+}
+
+/* 注册页  左框 内套框*/
+
+#account_register .form_register {
+   /* 圆角边框 */
+     border-radius: 20px;
+   	/* 背景颜色 */
+   	/* background-color: #09B9E6; */
+   	 /* 上边距 */
+   	
+   border: 2px solid  #8f8787  !important;
+}
+
+/* 注册页字段名称样式 */
+#account_register .form_register label{
+	color: #8f8787; 
+}
+
+/* 注册页输入框样式 */
+ #account_register .form_register input{
+	/* 背景颜色
+	background-color: #FFFFFF !important;
+	/* 宽度 */
+	width: 100%;
+	/* 圆角边框 */
+	/* border-radius: 20px; */
+}
+
+
+/* 注册页 左框 注册按钮 */
+
+
+/* 注册页 左框 忘记密码 */
+
+#account_register .btns_bottom .forgot_nav {
+   /*文字摆放位置*/
+      text-align: center !important;
+      /* 文字大小 */
+      font-size: 20px !important;
+      /* font-weight: 600; */
+      /* 字体倾斜 */
+      /* font-style:oblique; */
+      /* 下划线 */
+      /* text-decoration:underline; */
+      /* 下划线颜色 */
+     /* text-decoration-color: #f9f9f9; */
+      /* 文字颜色 */
+      color: #FFFFFF;
+   	/* 边框 */
+   background-color:#ebcbae !important;
+   	/* 宽度 */
+   	width: 50%;
+   	/* 圆角 */
+   	/* border-radius: 1.25rem ; */
+   	margin: 10px auto;
+   	height: 2.8rem;
+   	line-height: 2.8rem;
+}
+/* 注册页右框样式 */
+#account_register .card{
+	/* 圆角边框 */
+	   border-radius: 20px;
+	   /* 边框阴影 */
+	/*   box-shadow: 0.1125rem 0.1125rem  #ff9a00 !important; */
+	   /* 背景颜色 */
+	  background-color: #F4F7F9;
+	   /* 上边距 */
+	   margin-top: 10px !important;
+}
+
+/* 注册页右框中间行样式 */
+#account_register .card .register_nav {
+	/* 背景色 */
+	/* background-color: #f6f7d7 !important; */
+	/* 圆角 */
+	border-radius: 1.25rem;
+	  border: 2px solid  #ebcbae  !important;
+}
+
+
+/* 注册页 右框 已有账户？ */
+#account_register .register_nav{
+ /*文字摆放位置*/
+  text-align: right !important;
+  /* 文字大小 */
+  font-size: 20px !important;
+  /* font-weight: 600; */
+  /* 字体倾斜 */
+  /* font-style:oblique; */
+  /* 下划线 */
+ /* text-decoration:underline; */
+  /* 下划线颜色 */
+ /* text-decoration-color: #f9f9f9; */
+  /* 文字颜色 */
+  color: #8f8787;
+}
+
+
+
+
+/* 找回密码页用户名字段等样式 */
+#account_login .forget_container label{
+	/* 文本颜色 */
+	color: #8f8787;	
+}
+/* 找回密码页输入框等样式 */
+#account_login .forget_container input{
+		background-color: #FFFFFF !important;
+		/* 宽度 */
+		width: 70%;
+		/* 圆角边框 */
+		border-radius: 20px;
+}
+/* 找回密码页 发送验证码按钮 */
+
+#account_login .forget_container .input-group .input-group-append button{
+	/* 按钮背景颜色 */
+	background-color: #ebcbae !important;
+	border-radius: 1.25rem;
+	border: none;
+}
+
+/* 导航栏响应式后的菜单盒子样式 */
+
+.page_header .header_warp .my_header .nav_list{
+	/* 按钮背景颜色 */
+	/* background-color: #649efd !important; */
+	/* 圆角 */
+/* 	border-radius: 1.25rem; */
+	/* 字体颜色 */
+	color: #FFFFFF;
+}
+
+/* --------------------------------------------- */
+
+
+
+/* 首页 公告栏  标题盒子 */
+#root_demo .card_notice{
+	/* position: fixed;
+	top: 20rem;
+	left: 0;
+	width: 10%; */
+}
+#root_demo .card_notice .notice_title {
+    /* 圆角边框 */
+    border-radius: 12px  !important;
+    /* 边框阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+    /* 外边距 */
+    /* margin: 10px 0px 0x 0px; */
+    /* 内边距 */
+    /* padding: 10px 10px 10px 10px; */
+    /* 内部字体颜色 */
+    color: #8f8787;
+    /* 盒子透明度 */
+    /* opacity: 0.8; */
+    /* 背景颜色 */
+   background-color: #ebcbae !important;
+    /* 宽度 */
+    /* width: 100px; */
+    /* 高度 */
+    /* height: 100px !important; */
+    /*文字摆放位置*/
+    text-align:left !important;
+    /* 文字大小 */
+    /* font-size: 50px !important; */
+    /* font-weight: 600; */
+    /* 字体倾斜 */
+    /* font-style:oblique; */
+    /* 下划线 */
+    /* text-decoration:underline; */
+    /* 下划线颜色 */
+    /* text-decoration-color: #00a4ff; */
+    /* 文字颜色 */
+    /* color: #0000FF; */
+	/* margin-bottom: 5px; */
+}
+/* 公告栏内容外框 */
+#root_demo .card_notice .carousel {
+  /* 圆角边框 */
+   /* border-radius: 20px  !important; */	
+
+}
+/* 公告栏内容内框 */
+#root_demo .card_notice .carousel-inner{
+    /* 圆角边框 */
+   /* border-radius: 20px  !important; */
+	
+	
+}
+
+/* 首页 公告栏 盒子 内更多字体样式 */
+
+#root_demo .card_notice .notice_title  a {
+    /*文字摆放位置*/
+    /* text-align: left !important; */
+    /* 文字大小 */
+    /* font-size: 50px !important; */
+    font-weight: 400 !important;
+    /* 字体倾斜 */
+    /* font-style:oblique; */
+    /* 下划线 */
+    /* text-decoration:underline; */
+    /* 下划线颜色 */
+    /* text-decoration-color: #00a4ff; */
+    /* 文字颜色 */
+    color: #ebcbae !important;
+	font-size: 0.5rem !important;
+	display: block;
+	background-color:#537791;
+}
+/* 公告内容标题栏 */
+#root_demo .card_notice .title{
+	/* 文字摆放位置 */
+	text-align: center;
+	/* 背景色 */
+	/* background-color: #ff9a00; */
+	/* 上边距 */
+	margin-top: 0.625rem;
+	/* 圆角 */
+	border-radius: 1.25rem;
+}
+/* 公告内容栏 */
+#root_demo .card_notice .content{
+		/* background-color: #f6f7d7; */
+		/* 上边距 */
+		margin: 10px;
+		/* 圆角 */
+		border-radius: 10px 10px 0px 0.625rem;
+		/* overflow: hidden !important; */
+}
+
+/* 新闻列表顶部导航 */
+
+#root_demo .article_recommend {
+    /* 背景色 */
+    background:transparent  !important;
+	/* 圆角 */
+	/* border-radius: 1.25rem; */
+  
+ /*  width:55%;
+  margin-left: 30rem; */
+}
+
+/* 新闻列表左侧标题 */
+
+#root_demo .article_recommend .title{
+    /* 文字颜色 */
+    color: #537791 !important;
+	/* text-align: center !important; */
+	
+}
+
+/* 新闻列表顶部导航 切换列表按钮*/
+#root_demo .article_recommend .switch{
+	display: none;
+}
+#root_demo .article_recommend .switch_box{
+    /* 文字颜色 */
+    color: #f9f9f9 !important;
+    /* 边框 */
+    border: 2px solid #f9f9f9;
+	display: none;
+}
+
+/* 新闻列表顶部导航 更多按钮*/
+#root_demo .article_recommend .more_box .more{
+   /*文字摆放位置*/
+   /* text-align: left !important; */
+   /* 文字大小 */
+   /* font-size: 50px !important; */
+   font-weight: 400 !important;
+   /* 字体倾斜 */
+   /* font-style:oblique; */
+   /* 下划线 */
+   /* text-decoration:underline; */
+   /* 下划线颜色 */
+   /* text-decoration-color: #00a4ff; */
+   /* 文字颜色 */
+   color: #FFFFFF !important;
+   font-size: 1rem !important;
+   display: block;
+   background-color:#ebcbae;
+   line-height: 2.8rem;
+   text-align: center;
+}
+
+/* 新闻卡片列表样式 */
+#root_demo nav a {
+	
+    /* 背景色 */
+    background-color: #FFFFFF !important;
+    /* 边框阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+    /* 文字颜色 */
+    color: #8f8787 !important;
+    /* 圆角 */
+   /* border-radius: 20px; */
+
+}
+/* 新闻卡片图片盒子 */
+#root_demo nav .article .media .icon{
+	/* 高度 */
+	height: 12.5rem ;
+	/* 宽度 */
+	width: 15.625rem ;
+	/* background-size:100% !important; */
+}
+/* 新闻卡片列表中的图片样式 */
+#root_demo nav .article .media .icon img{
+    /* 圆角 */
+  /*  border-radius: 20px; */
+	/* 高度 */
+	height: 100%;
+	/* 宽度 */
+	width: 100%;
+	
+}
+/* 新闻卡片标题点赞时间框 */
+#root_demo nav .article .doc{
+	/* 布局方式 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items:flex-end; 
+	}
+/* 新闻卡片列表中的标题文字样式 */
+#root_demo nav .article .doc .title{
+    /* 文字颜色 */
+    color: #537791 !important;
+    /* 字体排版 */
+    text-align:left;
+    /* 文字加粗 */
+    font-weight: 400;
+}
+
+/* 新闻卡片列表中的点赞样式 */
+
+#root_demo nav .article .doc .interact{
+    /* 文字颜色 */
+    color: #FF0036 !important;
+    /* 字体排版 */
+    /* text-align:left; */
+    /* 字体倾斜 */
+   /* font-style:oblique; */
+}
+/* 新闻卡片列表中的时间样式 */
+#root_demo nav .article .doc .time{
+	margin-top: 10px;
+	/* 文字摆放位置 */
+/* 	text-align: left; */
+	/* 文字大小 */
+	font-size: 0.875rem;
+}
+
+/*  首页 商品推荐 、商品信息推荐、定制商品推荐 、网站公告推荐 标题栏*/
+
+#root_demo .diy_recommend{
+  /* 背景色 */
+    background:transparent  !important;
+  	/* 圆角 */
+  	/* border-radius: 1.25rem; */
+  
+   /* width:55%;
+  margin-left: 30rem; */
+}
+
+/*  首页 商品推荐 、商品信息推荐、定制商品推荐 、网站公告推荐 字体样式*/
+
+
+#root_demo .diy_recommend .title {
+    /*文字摆放位置*/
+    /* text-align: left !important; */
+    /* 文字大小 */
+    /* font-size: 50px !important; */
+    /* font-weight: 600; */
+    /* 字体倾斜 */
+    /* font-style:oblique; */
+    /* 下划线 */
+    /* text-decoration:underline; */
+    /* 下划线颜色 */
+    /* text-decoration-color: #00a4ff; */
+    /* 文字颜色 */
+     color: #537791 !important;
+}
+
+/*  首页 商品推荐 、商品信息推荐 、定制商品推荐 、网站公告推荐 切换表格*/
+#root_demo .diy_recommend .switch {
+	display: none !important;
+}
+#root_demo .diy_recommend .switch .switch_box {
+    /* 圆角边框 */
+    /* border-radius: 20px; */
+    /* 背景色 */
+    background-color: #649efd !important;
+    
+    /* 外边距 */
+    /* margin: 10px 10px 10px 10px; */
+    /* 内边距 */
+    /* padding: 10px 10px 10px 10px; */
+    /* 盒子透明度 */
+    /* opacity: 0.8; */
+    /* 背景颜色 */
+    /* background-color: #000000 !important; */
+    /* 宽度 */
+    /* width: 100px; */
+    /* 高度 */
+    /* height: 100x; */
+    /* 文字摆放位置*/
+    /* text-align: left !important; */
+    /* 文字大小 */
+    /* font-size: 50px !important; */
+    /* 文字加粗 */
+    /* font-weight: 600; */
+    /* 字体倾斜 */
+    /* font-style:oblique; */
+    /* 下划线 */
+    /* text-decoration:underline; */
+    /* 下划线颜色 */
+    /* text-decoration-color: #00a4ff; */
+    /* 文字颜色 */
+    color: #f9f9f9 !important;
+    /* 边框 */
+    border: 2px solid #f9f9f9;
+
+}
+
+/*  首页 商品推荐 、商品信息推荐 、定制商品推荐 、网站公告推荐 更多*/
+
+#root_demo .diy_recommend .more_box .more {
+ /*文字摆放位置*/
+ /* text-align: left !important; */
+ /* 文字大小 */
+ /* font-size: 50px !important; */
+ font-weight: 400 !important;
+ /* 字体倾斜 */
+ /* font-style:oblique; */
+ /* 下划线 */
+ /* text-decoration:underline; */
+ /* 下划线颜色 */
+ /* text-decoration-color: #00a4ff; */
+ /* 文字颜色 */
+ color: #FFFFFF !important;
+ font-size: 1rem !important;
+ display: block;
+ background-color:#ebcbae;
+ line-height: 2.8rem;
+ text-align: center;
+}
+
+/* 自定义首页和列表样式 */
+/* 自定义卡片列表大盒子 */
+
+
+/* ---------------------------------------------------------------------- */
+/* 添加页 */
+.diy_edit .row{
+	
+}
+.diy_edit .row .col-12{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: stretch;
+	align-items:flex-start; 
+	}
+/* 前台添加页表单标题 */
+.diy_edit .row .diy_title{
+    /* 字体大小 */
+    font-size: 20px;
+    /* 字体加粗 */
+    font-weight: 400;
+    /* 字体颜色 */
+    color: #8f8787;
+    /* 字体排放 */
+    text-align: right;
+    /* 圆角 */
+    border-radius: 20px;
+    /* 背景色 */
+   /* background-color: #649efd !important; */
+    /* 边框阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+    /* 宽度 */
+    width: 30% !important;
+	/* margin: 10px; */
+	margin-bottom: 1rem;
+}
+
+/* 前台添加页表单内容区 */
+
+.diy_edit .row  .diy_text{
+    /* 字体倾斜 */
+  /*  font-style:oblique; */
+    /* 字体颜色 */
+    color: #6a737d !important;
+    /* 字体大小 */
+    font-size: 20px;
+    /* 外边距 */
+   /* margin: 5px auto; */
+	border-radius: 1.25rem;
+	  width: 70% !important;
+}
+
+/* 前台添加页上传图片按钮 */
+
+.diy_edit .btn_add_img{
+    /* 字体颜色 */
+    color: #f9f9f9;
+    /* 字体大小 */
+    font-size: 20px;
+    /* 边框 */
+    border: 2px solid #f9f9f9;
+    /* 内边框 */
+    /* padding-right: 5px; */
+    /* 圆角 */
+    border-radius: 1.25rem;
+    /* 背景色 */
+    background-color: #ebcbae !important;
+    /* 边框阴影 */
+    /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+    /* 外边框 */
+   /* margin: 10px auto; */
+}
+
+/* 前台添加页上传图片后样式 */
+
+.diy_edit .diy_img label img{
+    /* 宽 */
+    width: 200px;
+    /* 高 */
+    height: 200px;
+    /* 外边框 */
+    margin: 5px auto;
+}
+
+/* 前台添加页提交按钮样式 */
+
+.diy_edit .btn_box .btn_submit{
+    /* 字体颜色 */
+    color: #FFFFFF;
+    /* 字体大小 */
+    font-size: 20px;
+    /* 边框 */
+    border:none;
+    /* 内边框 */
+    /* padding-right: 5px; */
+    /* 圆角 */
+    border-radius: 1.25rem;
+    /* 背景色 */
+    background-color: #ebcbae !important;
+    /* 边框阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+    /* 外边框 */
+   margin: 10px auto;
+    /* 摆放位置 */
+    float: right !important;
+}
+
+/* ------------------------------------------------------------------------ */
+/* 自定义列表页 */
+/*  */
+/* -------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------- */
+
+/* 首页导航栏 我的 盒子 */
+
+.my_header .user div:nth-child(2) {
+    /* 盒子位置 */
+    top: 3rem;
+    left: -1rem;
+    /* 高度 */
+    /* height: auto; */
+    /* 背景颜色 */
+    background-color: #8f8787;
+    /* 高度 */
+    /* width: 8rem; */
+    /* 盒子阴影 */
+    /* box-shadow: 0 2px 5px rgb(0 0 0 / 15%); */
+    /* display: flex; */
+    /* 边框圆角 */
+ /*   border-radius: 20px; */
+    /* flex-direction: column; */
+    /* 字体大小 */
+    /* font-size: 0.8rem; */
+}
+
+/* 首页导航栏 我的 盒子内字体样式 */
+
+#app .dropdown .my_item a {
+    /*文字摆放位置*/
+    /* text-align: left !important; */
+    /* 文字大小 */
+    font-size: 16px !important;
+    /* font-weight: 600; */
+    /* 字体倾斜 */
+    /* font-style:oblique; */
+    /* 下划线 */
+    /* text-decoration:underline; */
+    /* 下划线颜色 */
+    /* text-decoration-color: #00a4ff; */
+    /* 字体颜色 */
+    color: #FFFFFF !important;
+    /* 高度 */
+    /* height: 10px; */
+    /* 宽度 */
+    /* width: 10px; */
+}
+
+/* 首页导航栏 我的 鼠标移入效果 */
+
+#app .dropdown .my_item a:hover {
+    /*文字摆放位置*/
+    /* text-align: left !important; */
+    /* 文字大小 */
+    font-size: 20px !important;
+    /* font-weight: 600; */
+    /* 字体倾斜 */
+    /* font-style:oblique; */
+    /* 下划线 */
+    /* text-decoration:underline; */
+    /* 下划线颜色 */
+    /* text-decoration-color: #00a4ff; */
+    /* 文字颜色 */
+ /*   color: #00a4ff !important; */
+    /* 高度 */
+    /* height: 10px; */
+    /* 宽度 */
+    /* width: 10px; */
+    /*背景颜色 */
+   background-color: #ebcbae;
+}
+
+
+/* ------------------------------------------ */
+
+/* 我的 个人资料页 ‘个人资料’字体样式 */
+#user_info .div_info > span {
+    /* 元素性质 */
+    display: block;
+    /*文字摆放位置*/
+    text-align:center !important;
+    /* 文字大小 */
+    font-size: 30px;
+    /* 加粗 */
+    font-weight: 600;
+    /* 文字颜色 */
+    color: #8f8787;
+}
+
+/* 我的 个人资料页 头像字体样式 */
+#user_info .div_info .figure_avatar span {
+    /* 文字大小 */
+    font-size: 18px;
+    /* 加粗 */
+    font-weight: 600;
+    /* 文字颜色 */
+   /* color: #f9f9f9; */
+	margin-bottom: 1.25rem;
+}
+
+/* 我的 个人资料页 头像图片样式 */
+#user_info .div_info .figure_avatar img {
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 宽 */
+    width: 150px !important;
+    /* 高度 */
+    height: 150px !important;
+}
+
+/* 我的 个人资料页 昵称字体样式 */
+
+#user_info .div_info .nickname {
+    /*文字摆放位置*/
+    text-align: center !important;
+    /* 文字大小 */
+    /* font-size: 50px !important; */
+    /* font-weight: 600; */
+    /* 字体倾斜 */
+    /* font-style:oblique; */
+    /* 下划线 */
+    /* text-decoration:underline; */
+    /* 下划线颜色 */
+    /* text-decoration-color: #00a4ff; */
+    /* 文字颜色 */
+    /* color: #0000FF !important; */
+	margin-top: 100px;
+	/* 文字大小 */
+	font-size: 18px;
+	/* 加粗 */
+	font-weight: 600;
+}
+
+/* 我的 个人资料页 修改头像字体样式 */
+
+#user_info .div_info .right_msg .change_avatar_box .change_avatar span{
+    /*文字摆放位置*/
+    /* text-align: left !important; */
+    /* 文字大小 */
+    font-size: 20px !important;
+    /* font-weight: 600; */
+    /* 字体倾斜 */
+    /* font-style:oblique; */
+    /* 下划线 */
+    /* text-decoration:underline; */
+    /* 下划线颜色 */
+    /* text-decoration-color: #00a4ff; */
+    /* 文字颜色 */
+    /* color: #0000FF !important; */
+    background-color: #ebcbae;
+    border-radius: 20px;
+    border: 2px solid #f9f9f9;
+    padding: 8px;
+		color: #FFFFFF;
+}
+/* 我的 个人资料页 修改昵称字体样式 */
+#user_info .change_avatar_box .change_nickname{
+    /* 文字大小 */
+    font-size: 30px !important;
+    /* 文字颜色 */
+    color: #f9f9f9 !important;
+}
+
+/* 我的 个人资料页 修改头像图标样式 */
+#user_info .change_avatar_box .right_wrap {
+    /* 文字大小 */
+    font-size: 30px !important;
+    /* 文字颜色 */
+    color: #8f8787 !important;
+		
+}
+
+/* 我的 个人资料页 修改昵称字体样式 */
+#user_info .change_nickname_box .change_nickname span{
+    /* 文字大小 */
+    font-size: 20px !important;
+    /* 背景颜色 */
+     background-color: #ebcbae;
+    /* 圆角 */
+    border-radius: 20px;
+    /* 边框 */
+    border: 2px solid #f9f9f9;
+    /* 内边框 */
+    padding: 8px;
+	color: #FFFFFF;
+}
+
+/* 我的 个人资料页修改昵称、修改头像按钮 */
+#user_info .right_msg {
+    /* 浮动 */
+    float: right;
+}
+
+/* 我的 个人资料页 修改昵称箭头图标样式 */
+#user_info .change_nickname_box .right_wrap {
+    /* 文字大小 */
+    font-size: 30px !important;
+    /* 文字颜色 */
+  color: #8f8787 !important;
+    /* 外边框 */
+    margin-top: -10px;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/*  我的  修改密码页  密码修改字体*/
+#user_password .card_password div:nth-child(1) {
+    /* 文字大小 */
+   font-size: 30px ;
+    /* 字体颜色 */
+    color: #8f8787 !important;
+	
+}
+/* 我的  修改密码页 字段名称框*/
+#user_password .card_password label {
+   /* 文字大小 */
+   font-size: 18px ;
+   /* 字体颜色 */
+   color: #212529 !important;
+}
+/* 我的  修改密码页 input框*/
+#user_password .card_password input {
+    /* 边框阴影 */
+    box-shadow: 0.1125rem 0.1125rem  #f9f9f9;
+    /* 圆角 */
+    border-radius: 20px;
+    /* 边框 */
+    border: 1px solid #f9f9f9;
+}
+
+/* 我的 修改密码页 修改密码 按钮 */
+#user_password .btn_item {
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 边框阴影 */
+/*    box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+    /* 宽度 */
+    width: 40%;
+    /* 文字大小 */
+    font-size: 20px !important;
+    /* 加粗 */
+    font-weight: 600;
+	background-color: #ebcbae;
+	/* 左边距 */
+	margin-left: 8rem;
+	color: #FFFFFF !important;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* 我的 收货地址页  收货地址字体样式*/
+#user_address .card_address > div > span {
+    /* 元素性质 */
+    display: block;
+    /* 文字位置 */
+    text-align: center;
+    /* 文字大小 */
+    font-size: 25px !important;
+    /* 文字加粗 */
+    font-weight: 600;
+    /* 文字颜色 */
+    color: #8f8787 !important;
+}
+
+/* 我的 收货地址页外盒子 */
+#user_address .address_card{
+    /* 边框阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+    /* 背景色 */
+    background-color: #FFFFFF;
+    /* 边框 */
+    /* border: 1px solid #ff9a00; */
+    /* 圆角 */
+    border-radius: 20px;
+    /* 外下边距 */
+    margin-bottom: 20px;
+}
+
+/* 我的 收货地址页  收货人id */
+#user_address .address_content .name span {
+    /* 文字大小 */
+    font-size: 18px !important;
+    /* 文字加粗 */
+    font-weight: 600;
+    /* 文字颜色 */
+   color: #6a737d !important;
+}
+
+/* 我的 收货地址页  默认2字*/
+#user_address .address_content .tag span {
+    /* 文字大小 */
+    font-size: 20px !important;
+    /* 文字加粗 */
+    font-weight: 600;
+    /* 文字颜色 */
+  
+    /* 边框 */
+   border: none;
+   background-color: #ebcbae;
+   color: #FFFFFF !important ;
+}
+
+/* 我的 收货地址页  收货人联系电话*/
+#user_address .address_content .phone span {
+    /* 文字大小 */
+    font-size: 18px !important;
+    /* 文字加粗 */
+    font-weight: 600;
+    /* 文字颜色 */
+    color: #6a737d !important;
+}
+
+/* 我的 收货地址页  展开、折叠按钮*/
+#user_address .address_top .btn_show button {
+    /* 文字大小 */
+    font-size: 20px !important;
+    /* 文字加粗 */
+    font-weight: 600;
+    /* 文字颜色 */
+    color: #FFFFFF !important;
+    /* 边框阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+    /* 背景色 */
+    background-color: #ebcbae;
+    /* 圆角 */
+    border-radius: 20px;
+    /* 边框 */
+   /* border: 1px solid #f9f9f9; */
+}
+
+/* 我的 收货地址页  收货人地址*/
+#user_address .list_address .address_bottom span {
+    /* 文字大小 */
+    font-size: 18px !important;
+	/* 字体颜色 */
+	 color: #6a737d !important;
+}
+
+/* 我的 收货地址页  设置默认地址、删除、修改按钮*/
+#user_address .bar_btn button{
+    /* 文字大小 */
+    font-size: 20px !important;
+    /* 文字加粗 */
+    font-weight: 600;
+    /* 文字颜色 */
+    color: #FFFFFF !important;
+    /* 边框阴影 */
+    /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+    /* 背景色 */
+    background-color:#ebcbae;
+    /* 圆角 */
+    border-radius: 20px;
+    /* 边框 */
+   /* border: 1px solid #f9f9f9; */
+}
+
+/* 我的 收货地址页  新增收货地址按钮*/
+#user_address .btn_address{
+    /* 宽 */
+    width: 25%;
+    /* 文字大小 */
+    font-size: 20px !important;
+    /* 文字加粗 */
+    font-weight: 600;
+    /* 文字颜色 */
+    color: #FFFFFF !important;
+    /* 边框阴影 */
+    /*   */
+    /* 背景色 */
+    background-color: #ebcbae;
+    /* 圆角 */
+    border-radius: 20px;
+    /* 边框 */
+  /*  border: 1px solid  #f9f9f9; */
+}
+
+/* 新增收货地址表单标题 */
+#user_address_edit .form_address .header{
+    /* 文字大小 */
+    font-size: 25px !important;
+    /* 文字加粗 */
+    font-weight: 600;
+    /* 文字颜色 */
+    color: #8f8787 !important;
+}
+
+/* 新增收货地址表单 外盒子 */
+#user_address_edit .col-3{
+    /* 外边距 */
+    margin: 0 auto;
+    /* 字体颜色 */
+    color: #6a737d;
+    /* 字体大小 */
+    font-size: 20px;
+}
+
+/* 新增收货地址表单 输入框样式 */
+#user_address_edit .col-3 input{
+    /* 圆角 */
+    border-radius: 20px;
+    /* 边框 */
+   /* border: 1px solid #ff9a00; */
+    /* 边框阴影 */
+  /*  box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+}
+
+/* 新增收货地址表单 保存按钮 */
+#user_address_edit .btn_save{
+    /* 字体大小 */
+    font-size: 20px !important;
+    /* 文字加粗 */
+    font-weight: 600;
+    /* 文字颜色 */
+    color: #FFFFFF !important;
+    /* 边框阴影 */
+    /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+    /* 背景色 */
+    background-color: #ebcbae;
+    /* 圆角 */
+    border-radius: 20px;
+    /* 边框 */
+   
+}
+/* -------------------------------------------------------------------------------------------- */
+
+/* 我的 收藏页  收藏分类按钮 */
+#user_collect .filter_block .bar_filter .dropdown button {
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 边框阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+    /* 外边距 */
+   /* margin: 10px 10px 0px 300px; */
+    /* 字体颜色 */
+    color: #FFFFFF !important;
+    /* 背景色 */
+    background-color: #ebcbae;
+}
+
+/* 我的 收藏页  收藏分类展开页 */
+#user_collect .filter_block .bar_filter .dropdown ul{
+    /* 圆角边框 */
+    /* border-radius: 20px; */
+    /* 边框阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+    /* 背景色 */
+    background-color: #FFFFFF;
+    /* 字体颜色 */
+    color: #8f8787 !important;
+}
+
+/* 我的 收藏页  收藏列表框 */
+#user_collect .item_collect {
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 边框阴影 */
+  /*  box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+    /* 外边距 */
+ /*   margin-top: 40px; */
+    /* 内部字体颜色 */
+    color: #8f8787 !important;
+    /* 背景颜色 */
+    background-color: #FFFFFF;
+	/* 宽度 */
+	width: 80%;
+}
+
+/* 我的 收藏页  收藏列表框内图片 */
+#user_collect .left_block img {
+    /* 圆角边框 */
+    border-radius: 20px !important;
+    /* 宽度 */
+    width: 80px !important;
+    /* 高度 */
+    height: 80px !important;
+}
+
+/*我的 收藏页  收藏列表框内标题  */
+#user_collect .right_block .top_comment .title {
+    /*文字摆放位置*/
+    text-align: center !important;
+    /* 文字大小 */
+    font-size: 16px !important;
+    /* 加粗 */
+    /* font-weight: 600; */
+}
+
+/*我的 收藏页  收藏列表框内标题 鼠标移入样式 */
+#user_collect .right_block .top_comment .title:hover{
+    /* 内部字体颜色 */
+    color: #6a737d !important;
+    /* 字体大小 */
+     font-size: 18px !important;
+}
+
+/*我的 收藏页  收藏列表框内时间  */
+#user_collect .right_block .top_comment .time {
+    /*文字摆放位置*/
+    text-align: right !important;
+    /* 文字大小 */
+    font-size: 16px !important;
+    /* 内部字体颜色 */
+    color: #555500 !important;
+}
+
+/*我的 收藏页  收藏列表框内图标样式  */
+#user_collect .item_collect svg {
+    /* 文字大小 */
+    font-size: 25px !important;
+	color: #ebcbae;
+}
+
+/*我的 收藏页  收藏列表框内图标鼠标移入样式  */
+#user_collect .item_collect svg:hover {
+    /* 文字大小 */
+    font-size: 26px !important;
+    /* 背景颜色 */
+   
+}
+
+/* -------------------------------------------------------------------------------- */
+/* 订单页 */
+#order_list{
+	/* 背景色 */
+	/* background-color: #f9f9f9 !important; */
+}
+/*我的 我的订单页  我的订单字体样式  */
+
+#order_list .card_goods_list h4 {
+    /*文字摆放位置*/
+    text-align: center !important;
+    /* 文字颜色 */
+    color: #8f8787 !important;
+	margin-top: 1.25rem;
+}
+
+/* 我的 我的订单页 筛选按钮样式*/
+#order_list .card_goods_list .filter_block .bar_sort .dropdown button {
+    /* 文字大小 */
+    font-size: 18px !important;
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 边框阴影 */
+ /*   box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+    /* 背景颜色 */
+    background-color: #ebcbae !important;
+    /* 文字颜色 */
+    color: #FFFFFF;
+}
+
+/* 我的 我的订单页 下拉样式*/
+#order_list .dropdown ul{
+    /* 字体颜色 */
+    color: #FFFFFF !important;
+    /* 字体大小 */
+    font-size: 15px;
+    /* 边框阴影 */
+  /*  box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+    /* 背景色 */
+    background-color: #8f8787;
+    /* 圆角 */
+   /* border-radius: 20px; */
+   /* 边框 */
+   border: 0;
+}
+
+/* 我的 我的订单页 商品列表框 */
+#order_list .list_order .item_order {
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 背景色 */
+    background-color: #FFFFFF;
+}
+
+/* 我的 我的订单页 商品列表框 待付款字体样式 */
+#order_list .list_order .item_order .state {
+    /*文字摆放位置*/
+    text-align: right !important;
+    /* 文字大小 */
+    font-size: 20px !important;
+    /* 加粗 */
+    font-weight: 600;
+    /* 字体颜色 */
+    color: #ebcbae !important;
+    /* 下边框 */
+    border-bottom: 2px solid #ebcbae;
+}
+
+/* 我的 我的订单页 商品列表框 图片 */
+#order_list .list_order .item_order .goods_list .img_block img {
+    /* 圆角边框 */
+  /*  border-radius: 20px; */
+}
+
+/* 我的 我的订单页 商品列表框 标题字体样式 */
+#order_list .list_order .item_order .goods_list .middle_info .title {
+    /*文字摆放位置*/
+    text-align: center !important;
+    /* 文字大小 */
+    font-size: 18px !important;
+    /* 字体颜色 */
+    color: #8f8787 !important;
+}
+
+/* 我的 我的订单页 商品列表框 描述 */
+#order_list .list_order .item_order .goods_list .middle_info .description {
+    /* 文字大小 */
+    font-size: 14px !important;
+	color: #6a737d !important;
+}
+
+/* 我的 我的订单页 商品列表框 价格 */
+#order_list .list_order .item_order .goods_list .right_info .price {
+    /* 文字大小 */
+    font-size: 16px !important;
+    /* 字体颜色 */
+    color: red !important;
+}
+
+/* 我的 我的订单页 商品列表框 数量 */
+#order_list .list_order .item_order .goods_list .right_info .num {
+    /* 文字大小 */
+    font-size: 16px !important;
+    /* 字体颜色 */
+    color: #6a737d !important;
+}
+
+/* 我的 我的订单页 商品列表框 实付价 */
+#order_list .list_order .item_order .sum_price span {
+    /* 文字大小 */
+    font-size: 20px !important;
+    /* 字体颜色 */
+    color: #ebcbae !important;
+    /* 加粗 */
+    font-weight: 600;
+}
+
+/* 我的 我的订单页 商品列表框 删除按钮 */
+#order_list .list_order .item_order .sum_price button {
+    /* 文字大小 */
+    font-size: 30px !important;
+    /* 字体颜色 */
+    color: red !important;
+    /* 背景颜色 */
+    background-color: rgba(0, 0, 0, 0);
+    /* 边框 */
+    border: 0;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* 我的 我的购物车页框 */
+#cart_index .card {
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 边框阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+    /* 背景颜色 */
+    background-color: #FFFFFF  !important;
+    /* 字体颜色 */
+    color: #8f8787;
+}
+
+/* 购物车列表框 */
+ #cart_index .card .list_cart{
+	/* 圆角边框 */
+	border-radius: 20px;
+	/* 边框阴影 */
+	/* box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+	/* 背景颜色 */
+	background-color: #FFFFFF !important;
+	/* 字体颜色 */
+	color: #f9f9f9; 
+ }
+ 
+#cart_index .card h4{
+    /* 文字位置 */
+    text-align: center;
+	
+	margin: 0.625rem;
+}
+
+/* 我的 我的购物车页 商品列表勾选框样式*/
+#cart_index .card .list_cart .item_cart .btn_circle {
+    /* 圆角边框 */
+   /* border-radius: 20%; */
+    /* 边框阴影 */
+    /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+    /* 字体颜色 */
+    color: #f9f9f9;
+   
+}
+
+.list_cart .choose_btn.active .btn_circle{
+  background: #FFB400 !important;
+}
+
+.bar_settle .choose_btn.active{
+  color: #FFB400 !important;
+}
+
+/* 我的 我的购物车页 商品列表图片样式*/
+
+.cart_body .img_block img {
+    /* 圆角边框 */
+  /*  border-radius: 20px; */
+    /* 边框阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+}
+
+/* 我的 我的购物车页 商品列表标题字体样式 */
+.cart_body .right_info .title {
+    /* 文字大小 */
+    font-size: 20px !important;
+    /* 文字颜色 */
+    color:  #6a737d;
+	text-align: center;
+}
+
+/* 我的 我的购物车页 商品列表价格字体样式 */
+.cart_body .bottom_price .price {
+    /* 文字大小 */
+    font-size: 20px !important;
+    /* 文字颜色 */
+    color: #f9f9f9;
+}
+
+/* 我的 我的购物车页 商品列表 原价 字体样式 */
+.cart_body .bottom_price .price_ago {
+    /* 文字大小 */
+    font-size: 16px !important;
+    /* 内边框 */
+    padding-left: 10px;
+}
+
+/* 我的 我的购物车页 商品列表 加减数字 外框 */
+#cart_index .handle_num{
+    /* 圆角 */
+    border-radius: 10px;
+    /* 边框 */
+    border: 1px solid #f9f9f9;
+    /* 利用内边框撑大盒子 */
+   /* box-sizing: content-box; */
+    /* 内边框 */
+    padding: 10px;
+    /* 阴影 */
+    box-shadow: 0.1125rem 0.1125rem  #f9f9f9;
+    /* 行高 */
+    line-height: 21px;
+}
+
+/* 我的 我的购物车页 商品列表 选择数量加减盒子 */
+#cart_index .handle_num .subtract,#cart_index .handle_num .add{
+    /* 边框 */
+    border: 1px solid #f9f9f9;
+    /* 内边距 */
+    padding-bottom: 3px;
+    /* 背景颜色 */
+/*    background-color: #649efd; */
+}
+
+/* 我的 我的购物车页 商品列表 数量样式 */
+#cart_index .handle_num div{
+    /* 文字大小 */
+    font-size: 16px;
+    /* 文字颜色 */
+    color:  #6a737d !important;
+}
+
+/* 我的 我的购物车页 全选购买外盒子  */
+#cart_index .bar_settle[data-v-0e11f786]{
+    /* 背景颜色 */
+    background-color: rgba(0, 0, 0, 0);
+    /* 边框 */
+   /* border-top: 3px solid #f9f9f9; */
+    /* 设置主轴 */
+    flex-direction: column;
+    /* 外边框 */
+    margin-top: -55px;
+    margin-bottom: 30px;
+}
+
+/* 我的 我的购物车页 购买按钮  */
+#cart_index .container .btn_settle{
+    /* 文字大小 */
+    font-size: 20px !important;
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 边框阴影 */
+  /*  box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+    /* 背景颜色 */
+    background-color: #ebcbae !important;
+    /* 文字颜色 */
+    color: #f9f9f9;
+}
+
+/* 我的 我的购物车页 删除垃圾桶外盒子  */
+#cart_index .btn_del{
+    /* 边框阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+    /* 背景颜色 */
+   background-color: #ffffff !important;
+  
+   border: none !important;
+
+}
+
+/* 我的 我的购物车页 删除垃圾桶图标  */
+#cart_index .btn_del svg{
+    /* 文字颜色 */
+   color: #ebcbae;
+    /* 图标字体大小 */
+    font-size: 20px;
+}
+
+/* 我的 我的购物车页 删除按钮  */
+#cart_index .container .col > button {
+    /* 文字大小 */
+    font-size: 20px !important;
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 边框阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+    /* 背景颜色 */
+    background-color: #ebcbae !important;
+    /* 文字颜色 */
+    color: #FFFFFF;
+	margin-bottom: 1.25rem;
+	
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* 公告列表页 公告列表框 */
+#notice_list .notice_list {
+	/* border: 1px solid #8f8787; */
+	margin-top: 50px;
+}
+#notice_list .notice_list .notice_list_title {
+	display: block;
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 外边距 */
+    margin-top: 20px;
+    /* 背景颜色 */
+   background-color: #ebcbae !important;
+   color: #8f8787;
+   text-align: center;
+   line-height: 3.2rem;
+  font-size: 1.5rem !important;
+}
+#notice_list .notice_list  .notice_block{
+		border-bottom: 1px dashed #8f8787;
+}
+/* 公告列表页 公告列表字体样式*/
+#notice_list .notice_list .notice_list_title .title {
+    /* 字体颜色 */
+    color: #537791;
+	font-size: 1.5rem !important;
+
+}
+
+/* 公告列表页 公告列表下的 公告标题*/
+#notice_list .notice_list .notice_title {
+    /* 文字大小 */
+    font-size: 16px !important;
+    /* 下划线 */
+  /*  text-decoration:underline; */
+    /* 下划线颜色 */
+  /*  text-decoration-color: #649efd; */
+    /* 文字颜色 */
+    color: #537791;
+}
+
+/* 公告列表页 公告列表下的 公告发布时间*/
+#notice_list .notice_list .notice_create_time {
+    /* 文字颜色 */
+    color: #8f8787;
+}
+
+/* 公告详情页 顶部多一个“公告”两字 */
+#notice_list .notice_list span:first-child{
+    /* 隐藏 */
+  /*  display: none; */
+}
+
+
+/* 公告详情页 */
+
+/* 公告时间 */
+.notice_list .notice_creat_time{
+	text-align: center;
+	/* 颜色 */
+	color: #6a737d;
+	font-size: 1.125rem;
+}
+/* 内容区 */
+.notice_list .notice_content{
+	
+	background-color: #FFFFFF;
+}
+/* ---------------------------------------------------------------------------- */
+
+/* 购物车商品列表页 头部框  */
+#goods_list .card_goods_list .good_list_title {
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 边框阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+    /* 字体颜色 */
+    color: #8f8787;
+    /* 背景颜色 */
+    background-color: #ebcbae;
+	text-align: center;
+/* 	display: block; */
+	line-height:4rem;
+}
+
+/* 购物车商品列表页 头部框 内 搜索框样式 */
+#goods_list .card_goods_list .good_list_title .search_box input {
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 边框 */
+    border: 1px solid #f9f9f9;
+	
+}
+
+/* 购物车商品列表页 头部框 内 图标样式 */
+#goods_list .card_goods_list .good_list_title button {
+    /* 背景颜色 */
+    background-color: rgba(0, 0, 0, 0) !important;
+    /* 边框 */
+    border: 0;
+    /* 字体颜色 */
+    color: #537791;
+    /* 文字大小 */
+    font-size: 18px !important;
+}
+
+/* 购物车商品列表页 筛选按钮  */
+#goods_list .card_goods_list .filter_block .bar_filter .dropdown button {
+  color: #FFFFFF;
+  /* 背景颜色 */
+  background-color: #8f8787;
+   border: none !important;
+}
+
+/* 购物车商品列表页 排序按钮  */
+#goods_list .card_goods_list .filter_block .bar_sort .dropdown button {
+    /* 圆角边框 */
+  /*  border-radius: 20px; */
+    /* 字体颜色 */
+    color: #FFFFFF;
+    /* 背景颜色 */
+    background-color: #8f8787;
+    /* 边框阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+    /* 边框 */
+    border: 0;
+	/* margin-left:850px; */
+}
+
+
+.list_goods .goods{
+	border: 2px dashed #8f8787;
+}
+/* 购物车商品列表页商品卡片框内图片  统一样式*/
+#goods_list .list_goods .goods  .media{
+	height: 12.5rem;
+	width: 13.5rem;
+	
+}
+#goods_list .list_goods .goods .media img {
+    /* 圆角边框 */
+   /* border-radius: 20px; */
+   height: 100%;
+   width: 100%;
+}
+/* 购物车商品首页页商品卡片框内图片  统一样式*/
+#root_demo .list_goods .goods .media {
+	height: 12.5rem;
+	/* width: 16.5rem; */
+	
+	
+}
+#root_demo .list_goods .goods .media .icon{
+	height: 9.375rem;
+	width: 100%;
+	margin: 5px auto;
+}
+#root_demo .list_goods .goods   img {
+    /* 圆角边框 */
+   /* border-radius: 20px; */
+   height: 100% !important;
+   width: 100% !important;
+ 
+ }
+ 
+/* 购物车商品列表页首页 商品卡片框内 标题字体样式  统一样式*/
+.list_goods .goods .doc .title {
+    /*文字摆放位置*/
+    text-align: center !important;
+    /* 字体颜色 */
+    color: #537791;
+	
+}
+.list_goods .goods .doc .bottom  {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: stretch;
+	align-items:flex-start; 
+}
+/* 购物车商品列表页首页 商品卡片框内 价格 字体样式  统一样式*/
+.list_goods .goods .doc .bottom .price {
+    /* 文字大小 */
+    font-size: 20px;
+    /* 字体加粗 */
+    /* font-weight: 600; */
+    /* 字体倾斜 */
+    /* font-style:oblique; */
+    /* 文字颜色 */
+    color: red;
+	/* width: 20%; */
+}
+
+/* 购物车商品列表页首页 商品卡片框内 原价 字体样式  统一样式*/
+.list_goods .goods .doc .bottom .price_ago {
+    /* 文字大小 */
+    font-size: 16px;
+	width: 30%;
+	color: #a5aaa5;
+	margin-top:0.25rem ;
+}
+
+/* 购物车商品列表页首页 商品卡片框内 图标 样式  统一样式*/
+.list_goods .goods .doc .bottom svg {
+    /* 文字大小 */
+    font-size: 24px;
+	width: 30%;
+}
+/* 商品列表页 右侧推荐盒子 */
+#goods_list .card_list_hot{
+	background-color: #FFFFFF;
+	color: #8f8787;
+}
+#goods_list .card_list_hot .hot_title{
+	
+	color: #8f8787;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* 商品详情页 左侧图片框 */
+#goods_details .card_img .figure {
+    /* 圆角边框 */
+  /*  border-radius: 20px; */
+    /* 背景颜色 */
+    background-color: #FFFFFF;
+    /* 阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+}
+
+/* 商品详情页 左侧图片样式 */
+#goods_details .card_img img{
+    /* 圆角边框 */
+    /* border-radius: 20px; */
+}
+
+/* 商品详情页 商品商品详情框 */
+#goods_details .card_goods_info {
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 背景颜色 */
+    background-color: #FFFFFF
+    /* 阴影 */
+  /*  box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+}
+
+/* 商品详情页 商品商品详情框内头部标题 */
+#goods_details .card_goods_info .goods_name {
+    /* 元素性质 */
+    display: block;
+    /*文字摆放位置*/
+    text-align: center;
+    /* 文字大小 */
+    font-size: 20px;
+    /* 字体加粗 */
+    font-weight: 600;
+    /* 字体颜色 */
+    color: #6a737d;
+}
+
+/* 商品详情页 商品商品详情框内详情字体样式 */
+#goods_details .card_goods_info .description {
+    /* 字体倾斜 */
+   /* font-style:oblique; */
+}
+
+/* 商品详情页 商品商品详情框内详情 价格 样式 */
+#goods_details .card_goods_info .price_block .price {
+    /* 字体倾斜 */
+  /*  font-style:oblique; */
+}
+
+/* 商品详情页 商品商品详情框内详情 原价 样式 */
+#goods_details .card_goods_info .price_block .price_ago {
+    /* 文字大小 */
+    font-size: 20px;
+}
+
+/* 商品详情页 商品商品详情框内详情 评价星标 样式 */
+#goods_details .card_goods_info .price_block .score_star {
+    /* 文字大小 */
+    font-size: 25px;
+    /* 文字颜色 */
+    color: #f00c0c;
+}
+
+/* 商品详情页 商品商品详情框内详情 已卖字体样式 样式 */
+#goods_details .card_goods_info .sales {
+    /*文字摆放位置*/
+    text-align: right;
+    /* 文字大小 */
+    font-size: 20px;
+    /* 文字颜色 */
+    color: #8f8787;
+    /* 下划线 */
+    /* text-decoration:underline; */
+}
+
+/* 商品详情页 商品商品详情框内详情 选择数量外盒子 */
+#goods_details .card_goods_info .num_buy_block{
+    /* 圆角 */
+   /* border-radius: 10px; */
+    /* 边框 */
+    border: 1px solid #ebcbae;
+    /* 利用内边框撑大盒子 */
+    box-sizing: content-box;
+    /* 内边框 */
+    padding: 10px;
+    /* 阴影 */
+    /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+	/* 背景颜色 */
+	/* background-color: #649efd; */
+}
+
+/* 商品详情页 商品商品详情框内详情 选择数量加减盒子 */
+#goods_details .card_goods_info .num_buy_block .subtract,#goods_details .card_goods_info .num_buy_block .add{
+    /* 边框 */
+    /* border: 1px solid #649efd !important; */
+    /* 内边距 */
+    padding-bottom: 3px;
+    /* 背景颜色 */
+   background-color: #ebcbae;
+}
+
+/* 商品详情页 商品商品详情框内详情 数量样式 */
+#goods_details .card_goods_info .num_buy_block div{
+    /* 文字大小 */
+    font-size: 20px;
+    /* 文字颜色 */
+    color: #8f8787 !important;
+}
+/* 商品详情页 右侧商品卡片框 内立即购买按钮样式 */
+#goods_details .card_goods_info .buy {
+    /* 文字大小 */
+    font-size: 25px;
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 内部字体颜色 */
+    color: #FFFFFF;
+    /* 阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+   background-color: #ebcbae;
+   
+}
+#goods_details .options{
+	color: #537791 !important;
+}
+#goods_details .options:hover{
+	color: #8f8787 !important;
+}
+#goods_details .selected{
+	color: red;
+}
+/* 商品详情页 右侧商品卡片框 内加入购物车图标样式 */
+#goods_details .card_goods_info .cart {
+    /* 文字大小 */
+    font-size: 25px;
+    /* 内部字体颜色 */
+    color: red;
+}
+
+/* 商品详情页 右侧商品卡片框 内加入收藏图标样式 */
+#goods_details .card_goods_info .collect svg {
+    /* 文字大小 */
+    font-size: 25px;
+    /* 字体颜色 */
+    color: red;
+    /* 外边框 */
+    margin-top: 10px;
+}
+/* 商品详情页 底部详情评论 */
+#goods_details .card_bottom_goods .options  {
+	display: block;
+    /* 内边距 */
+   /* padding-left: 10px; */
+    /* 边框 */
+    border-left: 2px solid #537791;
+    /* 字体颜色 */
+    color: #6a737d;
+	text-align: center;
+}
+/* 商品详情页 右侧商品卡片框  */
+#goods_details .card_aside {
+    /* 圆角边框 */
+    border-radius: 20px;
+    /* 背景颜色 */
+    background-color: #FFFFFF;
+    /* 阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+   padding-top: 10px;
+}
+#goods_details .card_aside h5{
+	text-align: center;
+}
+/* 商品列表页详情页 右侧商品卡片框 标题字体样式 统一样式*/
+#goods_details .card_aside .title{
+    /* 文字颜色 */
+    color:  #8f8787;
+}
+#goods_details .bottom_handle  .bi-heart-fill{
+	color: red !important;
+}
+
+/* ---------------------------------------------------------- */
+/* 文章列表页 */
+/* 文章标题 栏*/
+#article_list .article_list_title{
+	/* 背景色 */
+	background-color: #ebcbae;
+
+}
+/* 文章列表标题样式 */
+#article_list .article_list_title .title{
+	/* 字体大小 */
+	font-size: 1.5rem;
+	color: #8f8787;
+	display: block;
+	margin: 5px auto;
+}
+#article_list  .bar_filter,
+#article_list  .bar_sort{
+	background-color: #8f8787;
+	color: #f9f9f9;
+}
+/* 搜索框按钮 */
+#article_list .article_list_title .search_box button{
+	background-color: #f9f9f9 !important;
+	color: #ebcbae !important;
+	
+}
+/* 列表大盒子 */
+#article_list .list_article {
+	/* background-color: #6a737d; */
+}
+/* 单个卡片样式 */
+#article_list .list_article .article_warp{
+	/* 背景色 */
+	 background-color: #FFFFFF !important;
+	 /* 边框阴影 */
+	/* box-shadow: 0.1125rem 0.1125rem  #f9f9f9 !important; */
+	 /* 文字颜色 */
+	 color: #8f8787 !important;
+	 /* 圆角 */
+	/* border-radius: 20px; */
+}
+/* 图片盒子样式 */
+#article_list .list_article .article_warp .icon{
+	height: 150px;
+	width: 200px;
+	}
+	/* 图片样式 */
+	#article_list .list_article .article_warp img{
+		height: 100%;
+		width: 100%;
+		}
+	
+	#article_list .list_article .article_warp  .doc{
+		/* 布局方式 */
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: space-between;
+	    flex-wrap: wrap;
+	    align-content: stretch;
+	    align-items:flex-end; 
+		}
+	/* 新闻卡片列表中的标题文字样式 */
+	#article_list .list_article .article_warp .doc .title{
+	 /* 文字颜色 */
+	 color: #537791 !important;
+	 /* 字体排版 */
+	 text-align:left;
+	 /* 文字加粗 */
+	 font-weight: 400;
+	}
+	
+	/* 新闻卡片列表中的点赞样式 */
+	
+	#article_list .list_article .article_warp .interact{
+	    /* 文字颜色 */
+	    color: red !important;
+	    /* 字体排版 */
+	    /* text-align:left; */
+	    /* 字体倾斜 */
+	   /* font-style:oblique; */
+	}
+	/* 新闻卡片列表中的时间样式 */
+	#article_list .list_article .article_warp .time{
+		margin-top: 10px;
+			/* 文字摆放位置 */
+		/* 	text-align: left; */
+			/* 文字大小 */
+			font-size: 0.875rem;
+	}	
+	/* 右侧热门推荐盒子 */
+	#article_list .card_article_hot{
+		/* 背景色 */
+		background-color: #FFFFFF;
+	}
+	/* 右侧文章热门列表标题 */
+	#article_list .card_article_hot .hot_title{
+		/* 文字颜色 */
+		color: #ebcbae;
+		/* 背景色 */
+		background-color: #FFFFFF;
+		/* 圆角 */
+		border-radius: 0.625rem;
+	}
+  /* 热门文章列表框 */
+	#article_list .card_article_hot .list_article_hot{
+		/* 文字颜色 */
+		color:  #6a737d ;
+		/* 背景色 */
+		background-color: #FFFFFF;
+		/* 圆角 */
+		border-radius: 0.625rem;
+	}
+	  /* 热门文章列表标题 */
+	 #article_list .card_article_hot .list_article_hot.item{
+	  	/* 文字颜色 */
+	  	color:  #8f8787;
+		/* 字体大小 */
+		font-size: 1.125rem;
+	    }
+	 
+	  /* 文章详情页 左侧大盒子*/  
+	.page_article .article_detail{
+		  /* 背景色 */
+		  background-color: #FFFFFF;
+	  }
+	  /* 文章详情页文章标题 */
+	.page_article .article_detail .title{
+		/* 文字位置 */
+		text-align:left;
+	}
+	/* 详情页标签和时间 */
+	.page_article .article_detail .aside_row{
+		
+		/* 文字位置 */
+	}
+	/* 标签样式 */
+	.page_article .article_detail .aside_row .tag {
+		/* 背景色 */
+		background-color: #FFFFFF;
+		/* 字体颜色 */
+		color: #ebcbae;
+		/* 字体大小 */
+		font-size: 16px;
+		}
+		/* 时间样式 */
+    .page_article .article_detail .aside_row .time{
+			/* 字体大小 */
+			font-size: 1rem;
+		}
+		/* 点赞样式 */
+	.page_article .article_detail .aside_row .praise{
+			/* 字体大小 */
+			font-size: 1rem;
+		}
+		/* 点击量样式 */
+	.page_article .article_detail .aside_row .see{
+			/* 字体大小 */
+			font-size: 1rem;
+		}
+		/* 收藏和点赞按钮 */
+	.page_article .article_detail .btns_interact .btn{
+		/* 背景色 */
+		background-color: #ebcbae;
+		/* 颜色 */
+		color: #FFFFFF;
+	}
+	/* 来源样式 */
+	.page_article .article_detail .description{
+		/* 文字位置 */
+		text-align: center;
+		/* 字体颜色 */
+		color: #6a737d;	
+	}
+	/* 内容区样式 */
+	.page_article .article_detail .content{
+		/* 文字颜色 */
+		color:#6a737d;
+	}
+	/* 文章详情页评论 */
+	.page_article .bar_title .title {
+		/* 外边距 */
+		margin: 0 auto;
+		/* 字体颜色 */
+		color:#6a737d;
+		/* 字体大小 */
+		font-size: 1.25rem;
+		/* 字体加粗 */
+		font-weight: 600;
+		
+	}
+	
+	
+	/* 右侧热门推荐盒子 */
+		.page_article .list_hot{
+			/* 背景色 */
+			background-color: #FFFFFF !important;
+		}
+		/* 右侧文章热门列表标题 */
+		.page_article .list_hot .hot_title{
+			/* 文字颜色 */
+			color:  #ebcbae;
+			/* 背景色 */
+			background-color: #FFFFFF;
+			/* 圆角 */
+			border-radius: 0.625rem;
+		}
+	/* 热门文章列表框 */
+		.page_article .list_hot .list_article_hot{
+			/* 文字颜色 */
+			color:  #8f8787;
+			/* 背景色 */
+			background-color: #FFFFFF;
+			/* 圆角 */
+			border-radius: 0.625rem;
+		}
+		  /* 热门文章列表标题 */
+		 .page_article .list_hot .list_article_hot.item{
+		  	/* 文字颜色 */
+		  	color:  #8f8787;
+			/* 字体大小 */
+			font-size: 1.125rem;
+		  
+		  }
+/* 页脚 */
+.page_footer .wrap{
+    /* 边框阴影 */
+   /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+    /* 背景色 */
+    background-color: #8f8787 !important;
+    /* 字体颜色 */
+    color: #FFFFFF !important
+}
+
+/* 分页器 */
+/* 首页和第一页按钮 */
+.overflow-auto .pagination .page-item  span {
+    /* 字体颜色 */
+    color: #f9f9f9 !important;
+    /* 字体大小 */
+    font-size: 15px;
+    /* 边框阴影 */
+  /*  box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+    /* 背景色 */
+    background-color: #649efd;
+    /* 边框 */
+    /* border: 1px solid #f9f9f9; */
+	/* margin-top: 20px; */
+	display: block !important ;
+}
+/* 下一页和末页 */
+.overflow-auto .pagination .page-item button{
+	/* 字体颜色 */
+	  color: #537791 !important;
+	  /* 字体大小 */
+	  font-size: 15px;
+	  /* 边框阴影 */
+	/*  box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+	  /* 背景色 */
+	  background-color: #649efd;
+	  /* 边框 */
+	  /* border: 1px solid #f9f9f9; */
+		/* margin-top: 20px; */
+		display: block !important ;
+}
+/* 当前页数 */
+.overflow-auto .pagination .page-item.active button{
+	/* background-color: #649efd !important; */
+	 display: block !important ;
+}
+/* 评论功能 */
+/* 评论底部发表评论按钮 */
+.btn_publish button{
+    /* 宽 */
+    width: 30%;
+    /* 外边框 */
+    margin: 0 auto;
+    /* 边框阴影 */
+    /* box-shadow: 0.1125rem 0.1125rem  #f9f9f9; */
+    /* 背景色 */
+    background-color: #ebcbae;
+    /* 边框 */
+    border: 1px solid #f9f9f9;
+    /* 字体颜色 */
+    color: #f9f9f9 !important;
+    /* 字体加粗 */
+    font-weight: 600;
+}
+/* 评论区外盒子 */
+.comment_box{
+	 border: 1px solid #ebcbae;
+}
+/* 评论区内盒子 */
+.list_comment{
+	
+}
+/* 发布盒子 */
+.comment_box .comment{
+	/* background-color: #000000; */
+	}
+	/* 回复盒子 */
+	.comment_box  .list_reply{
+	/* 	background-color: yellow; */
+	}
+/* 评论单条 */
+.item_comment_box{
+	background-color: #FFFFFF;
+	
+}
+/* 头像 */
+.item_comment_box img{
+	
+}
+/* 昵称 */
+.item_comment_box .right_block .nickname{
+	color: red;
+}
+/*发布 时间 */
+.item_comment_box .right_block .time{
+		color:#8f8787;
+}
+/* 内容区 */
+.item_comment_box .right_block .content{
+	color: #8f8787;
+}
+/* 回复按钮 */
+.item_comment_box  .comment_reply button{
+	background-color: #ebcbae;
+	color: #FFFFFF;
+}
+/* 回复人昵称 */
+.item_comment_box .list_reply .nickname{
+	color: red;
+}
+/* 回复时间 */
+.item_comment_box .list_reply .time{
+	color: #8f8787;
+}
+/* 回复内容 */
+.item_comment_box .list_reply .ml-5{
+	color:#8f8787;
+}
+ .page_account {
+   background: url("../img/body_bg.jpg") no-repeat !important;
+   background-size: 100% 100% !important;
+ }
+ .div_article img{
+ 	width: 100%;
+ 	height: 100%;
+ }
+ .ql-align-center img{
+ 	width: 100%;
+ 	height: 100%;
+ }
+ /* 图片右边样式 */
+ 
+ 
+/* 图片右边样式 */
+
+
+.diy_details {
+ /* width: 1140px; */
+  margin: 0 auto 50px;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.details_title {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #666 ;
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 40px;
+  padding-left: 15px;
+  overflow: hidden;
+}
+
+.row_top_wrap {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 45px;
+  min-height: 225px;
+}
+
+.row_top_wrap .row_1 {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  order: 2;
+}
+
+.row_top_wrap .row_1 .diy_img,
+.row_top_wrap .row_1 .diy_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  margin-bottom: 4px;
+  box-shadow: 0 2px 16px 2px #ccc;
+}
+
+.diy_details_box .warp .container .row {
+  justify-content: start;
+}
+
+.row_top_wrap .row_2 {
+  order: 1
+}
+
+.flex_row2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex_row2_item {
+  width: 500px;
+  margin-right: 20px;
+}
+
+.flex_row2_item_text {
+  max-width: 600px !important;
+}
+
+.diy_details_box .warp .container,
+.diy_details_box .warp .container .row {
+  padding: 0;
+  margin: 0;
+}
+
+.row_top_wrap .row_2 .view {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.row_top_wrap .row_2 .view .diy_title {
+  text-align: right;
+  font-size: 20px;
+  background: #666 ;
+  border-radius: 10px;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0 10px;
+  min-width: 100px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.row_top_wrap .row_2 .view .diy_field {
+  margin-left: 15px;
+  font-size: 18px;
+  min-width: 180px;
+  max-width: 285px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.rich_text {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+  padding-top: 25px;
+  display: block;
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+.rich_text .diy_title {
+  font-size: 22px;
+  height: 24px;
+  line-height: 24px;
+  padding-left: 10px;
+  border-left: 6px solid #666 ;
+  margin-bottom: 25px;
+
+}
+
+.rich_text .diy_html h1,
+.rich_text .diy_html h2,
+.rich_text .diy_html h3 {
+  font-size: 18px !important;
+  color: #333 !important;
+  font-weight: bold !important;
+  margin-bottom: 15px !important;
+}
+
+.rich_text .diy_html p,
+.rich_text .diy_html div,
+.rich_text .diy_html a,
+.rich_text .diy_html span {
+  font-size: 16px !important;
+  color: #666 !important;
+}
+
+.rich_text .diy_html img {
+  max-width: 100% !important;
+}
+
+.praise_wrap {
+  margin-top: 45px;
+  width: 100%;
+  text-align: right;
+}
+
+.praise_wrap .diy_title {
+  color: #333;
+}
+
+.praise_wrap .diy_text {
+
+  color: #666 ;
+}
+
+.details_btn_wrap {
+  text-align: right;
+  margin: 30px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 2px dashed #666 ;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.details_btn {
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  background: #666 !important;
+  border-color: #666 !important;
+}
+
+.details_btn:hover {
+  background: #666 !important;
+  border-color: #666 !important;
+}
+
+.mt {
+  font-size: 22px;
+  height: 24px;
+  line-height: 24px !important;
+  padding-left: 10px;
+  border-left: 6px solid #666 ;
+  margin-bottom: 25px;
+}
+
+.diy_details .form_editor_block {
+  height: 300px;
+}
+
+.diy_details .fn .btn_publish {
+  margin: 110px 0 30px;
+  text-align: center;
+}
+
+.diy_details .fn .btn_publish .btn {
+  width: 150px;
+  display: inline-block;
+  background: #666 !important;
+  border-color: #666  !important;
+  color: #fff !important;
+}
+
+.diy_details .fn .btn_publish .btn:hover {
+  background: #666 !important;
+  border-color: #666 !important;
+
+}
+
+.comment_box {
+  border-bottom: 2px dashed #666 ;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+.diy_details .pagination {
+  justify-content: center;
+  padding-top: 25px;
+  border-top: 1px solid #ccc;
+}
+
+.form_edit_box .details_form_editor_title {
+  font-size: 22px;
+  height: 24px;
+  line-height: 24px;
+  padding-left: 10px;
+  border-left: 6px solid #666 ;
+  margin-bottom: 40px;
+
+}
+
+.answer_title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  color: #666 ;
+}
+
+.reset_answer_personnel {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  background: #666 ;
+  border-color: #666  !important;
+  color: #fff !important;
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  top: -5px;
+
+}
+
+.reset_answer_personnel:hover {
+  background: #666 ;
+  border-color: #666  !important;
+
+}
+#forum_index .add_forum{
+	background-color: #ebcbae;
+}
+#forum_index .top {
+	color: #537791;
+}
+#forum_details .title{
+	color: #537791;
+}
+#forum_details .content h1{
+	font-size: 20px;
+}
+#forum_details .btns_add .praise_btn,
+#forum_details .btns_add .collect_btn
+{
+	background-color: #ebcbae;
+
+}
+#forum_index .warp{
+	margin-top: 50px;
+}
+#exam_list .table_title .table_th{
+	background-color: #ebcbae;
+}
+#exam_list .answer_link span{
+	color: #8f8787 ;
+}
+#exam_view .container{
+	border: 1px solid #ebcbae;
+	margin-top: 50px;
+	max-width: 1050px;
+	
+}
+#exam_view .container .row{
+	margin-left: 50px;
+	padding-left: 10px;
+}
+#exam_view .answer_btn_cancel{
+	background-color: #ebcbae;
+}
+#goods_list .warp{
+	margin-top: 50px;
+}
+/*************************************************  外框盒子样式 ************************************************ */
+#app .diy_list .diy_list_container {
+  background: #fff;
+  box-sizing: border-box;
+  padding: 30px 15px;
+  margin-bottom: 30px;
+}
+
+#app .diy_list .diy_list_container .diy_list_title {
+  height: 50px;
+  line-height: 50px;
+  background:#8f8787;
+  color: #fff;
+  padding-left: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+#app .diy_list .diy_list_search {
+  margin: 30px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+  padding: 0 15px 30px;
+}
+
+#app .diy_list .diy_list_select_box {
+  display: flex;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+#app .diy_list .diy_list_select_box .diy_list_dropdown_box .col .view {
+  display: flex;
+
+}
+
+#app .diy_list .diy_list_select_box .diy_list_dropdown_box .col .view .dropdown {
+  margin-right: 10px;
+}
+
+#app .diy_list .diy_list_select_box .diy_list_select_title {
+  position: relative;
+  top: 6px;
+
+}
+
+#app .diy_list .diy_list_search .col .view {
+  display: flex;
+}
+
+#app .diy_list .diy_list_search .col .diy_list_search_title {}
+
+#app .diy_list .diy_list_search .col .view input {
+  width: 130px;
+
+}
+
+#app .diy_list .diy_list_box {
+  padding: 0 15px;
+}
+
+.btn-outline-dark:hover,
+.btn-secondary:hover {
+  color: #fff;
+  background-color:#8f8787 !important;
+  border-color:#8f8787 !important;
+}
+
+#app .diy_list .diy_list_page_box {
+  margin: 30px 0;
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
+}
+
+#app .diy_list .diy_list_page_box .col .warp .container .row {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+#app .diy_list .diy_list_page_box .col .warp .container .row div {
+  height: 40px;
+  line-height: 34px;
+  flex: 0.09 !important;
+}
+
+#app .diy_list .diy_list_page_box .col .warp .container .row div .page-item.active .page-link {
+  background:#8f8787 !important;
+  border-color:#8f8787 !important;
+  color: #fff !important;
+}
+
+/* *********************元素样式************************** */
+
+
+.diy_view_list .diy_list_box_wrap {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.diy_view_list .diy_list_box_wrap .diy_list_img_box {
+  /* margin: 10px auto 15px; */
+  padding: 0 0 8px;
+  /* border-bottom: 1px solid #ccc; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 2;
+}
+
+.diy_view_list .diy_list_box_wrap .diy_list_img_box .diy_img {
+  width: 250px;
+  height: 250px;
+
+}
+
+.diy_view_list .diy_list_box_wrap .diy_list_img_box .diy_img img {
+  border-radius: 10px;
+
+}
+
+.diy_list_img_box .diy_list_img_title {
+  display: none;
+}
+
+.diy_view_list .diy_list_box_wrap .diy_list_item_box {
+  padding: 10px;
+  order: 1;
+}
+
+.diy_view_list .diy_list_box_wrap .diy_list_item_box .diy_list_item_content {
+  margin-bottom: 5px;
+}
+
+.diy_view_list .diy_list_box_wrap .diy_list_item_box .diy_list_item_content .diy_row .diy_title {
+  margin-right: 5px;
+  width: 72px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.diy_view_list .diy_list_box_wrap .diy_list_item_box .diy_list_item_content .diy_row .diy_text {
+  width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.diy_view_list .diy_list_box_wrap .diy_list_item_box .diy_list_item_content .diy_row {
+  display: flex;
+}
+/* 图片左边样式 */
+
+.diy_details {
+  width: 1140px;
+  margin: 0 auto 50px;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.details_title {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #8f8787;
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 40px;
+  padding-left: 15px;
+  overflow: hidden;
+}
+
+.row_top_wrap {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 45px;
+  min-height: 225px;
+}
+
+.row_top_wrap .row_1 {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.row_top_wrap .row_1 .diy_img,
+.row_top_wrap .row_1 .diy_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  margin-bottom: 4px;
+  box-shadow: 0 2px 16px 2px #ccc;
+}
+
+.diy_details_box .warp .container .row {
+  justify-content: start;
+}
+
+.row_top_wrap .row_2 {
+  /* width: 840px; */
+}
+
+.flex_row2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex_row2_item {
+  width: 500px;
+  margin-right: 20px;
+}
+
+.flex_row2_item_text {
+  max-width: 600px !important;
+}
+
+.diy_details_box .warp .container,
+.diy_details_box .warp .container .row {
+  padding: 0;
+  margin: 0;
+}
+
+.row_top_wrap .row_2 .view {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.row_top_wrap .row_2 .view .diy_title {
+  min-width: 100px;
+  text-align: right;
+  font-size: 20px;
+}
+
+.row_top_wrap .row_2 .view .diy_field {
+  margin-left: 15px;
+  font-size: 18px;
+  min-width: 180px;
+  max-width: 285px;
+  color: #537791;
+}
+
+.rich_text {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+  padding-top: 25px;
+  display: block;
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+.rich_text .diy_title {
+  font-size: 22px;
+  height: 24px;
+  line-height: 24px;
+  padding-left: 10px;
+  border-left: 6px solid #8f8787;
+  margin-bottom: 25px;
+
+}
+
+.rich_text .diy_html h1,
+.rich_text .diy_html h2,
+.rich_text .diy_html h3 {
+  font-size: 18px !important;
+  color: #333 !important;
+  font-weight: bold !important;
+  margin-bottom: 15px !important;
+}
+
+.rich_text .diy_html p,
+.rich_text .diy_html div,
+.rich_text .diy_html a,
+.rich_text .diy_html span {
+  font-size: 16px !important;
+  color: #666 !important;
+}
+
+.rich_text .diy_html img {
+  max-width: 100% !important;
+}
+
+.praise_wrap {
+  margin-top: 45px;
+  width: 100%;
+  text-align: right;
+}
+
+.praise_wrap .diy_title {
+  color: #333;
+}
+
+.praise_wrap .diy_text {
+
+  color: #8f8787;
+}
+
+.details_btn_wrap {
+  text-align: right;
+  margin: 30px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 2px dashed #8f8787;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.details_btn {
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  background: #ebcbae !important;
+  border-color: #8f8787 !important;
+}
+
+.details_btn:hover {
+  background: #8f8787 !important;
+  border-color: #8f8787 !important;
+}
+
+.mt {
+  font-size: 22px;
+  height: 24px;
+  line-height: 24px !important;
+  padding-left: 10px;
+  border-left: 6px solid #8f8787;
+  margin-bottom: 25px;
+}
+
+.diy_details .form_editor_block {
+  height: 300px;
+}
+
+.diy_details .fn .btn_publish {
+  margin: 110px 0 30px;
+  text-align: center;
+}
+
+.diy_details .fn .btn_publish .btn {
+  width: 150px;
+  display: inline-block;
+  background: #8f8787 !important;
+  border-color: #8f8787 !important;
+  color: #fff !important;
+}
+
+.diy_details .fn .btn_publish .btn:hover {
+  background: #8f8787 !important;
+  border-color: #8f8787 !important;
+
+}
+
+.comment_box {
+  border-bottom: 2px dashed #8f8787;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+.diy_details .pagination {
+  justify-content: center;
+  padding-top: 25px;
+  border-top: 1px solid #ccc;
+}
+
+.form_edit_box .details_form_editor_title {
+  font-size: 22px;
+  height: 24px;
+  line-height: 24px;
+  padding-left: 10px;
+  border-left: 6px solid #8f8787;
+  margin-bottom: 40px;
+
+}
+
+.answer_title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  color: #8f8787;
+}
+
+.reset_answer_personnel {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  background: #8f8787;
+  border-color: #8f8787 !important;
+  color: #fff !important;
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  top: -5px;
+
+}
+
+.reset_answer_personnel:hover {
+  background: #8f8787;
+  border-color: #8f8787 !important;
+
+}
+.diy_edit .row {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  margin-top: 9.5rem;
+  border: 1px solid #8f8787;
+  padding: 30px 0;
+}
+
+.diy_edit .row:nth-child(2) {
+  border: none;
+}
+
+.diy_edit .row:nth-child(2) .btn_box .btn_submit {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.diy_edit .row .col-12,
+.diy_edit .row .col-md-6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+/* 前台添加页表单标题 */
+.diy_edit .row .diy_title {
+  /* 字体大小 */
+  font-size: 20px;
+  /* 字体加粗 */
+  font-weight: 600;
+  /* 字体颜色 */
+  color: #537791;
+  /* 字体排放 */
+  text-align: center;
+  /* 圆角 */
+  border-radius: 20px;
+  /* 背景色 */
+  /* background-color: #ffffff !important; */
+  /* 边框阴影 */
+  /* box-shadow: 0rem 0 0.4rem #ffffff !important; */
+  /* 宽度 */
+  width: 22%;
+  margin: 10px 0;
+}
+
+/* 前台添加页表单内容区 */
+
+.diy_edit .row .diy_text {
+  /* 字体倾斜 */
+  /*  font-style:oblique; */
+  /* 字体颜色 */
+  color: #537791 !important;
+  /* 字体大小 */
+  font-size: 20px;
+  /* 外边距 */
+  margin: 5px 0;
+  /* border-radius: 1.25rem; */
+}
+
+.diy_edit .row .diy_text input {
+  border: none;
+  background: transparent !important;
+  border-bottom: 1px solid #fff;
+  color: #537791;
+  border-radius: 0;
+}
+
+/* 前台添加页上传图片按钮 */
+
+.diy_edit .btn_add_img {
+  /* 字体颜色 */
+  /* color: #ffffff; */
+  /* 字体大小 */
+  font-size: 30px;
+  /* 边框 */
+  border: 2px solid #ebcbae;
+  /* 内边框 */
+  /* padding-right: 5px; */
+  /* 圆角 */
+  border-radius: 1.25rem;
+  /* 背景色 */
+  background-color: #ebcbae !important;
+  /* 边框阴影 */
+/*  box-shadow: 0rem 0 0.4rem #333 !important; */
+  /* 外边框 */
+  margin: 10px auto;
+}
+
+/* 前台添加页上传图片后样式 */
+
+.diy_edit .diy_img label img {
+  /* 宽 */
+  width: 200px;
+  /* 高 */
+  height: 200px;
+  /* 外边框 */
+  margin: 5px auto;
+}
+
+/* 前台添加页提交按钮样式 */
+
+.diy_edit .btn_box .btn_submit {
+  /* 字体颜色 */
+  color: blue;
+  /* 字体大小 */
+  font-size: 30px;
+  /* 边框 */
+  /* border: 2px solid #ffffff; */
+  /* 内边框 */
+  /* padding-right: 5px; */
+  /* 圆角 */
+  border-radius: 1.25rem;
+  /* 背景色 */
+  background-color: #8f8787 !important;
+  /* 边框阴影 */
+ /* box-shadow: 0rem 0 0.4rem #ffffff !important; */
+  /* 外边框 */
+  margin: 10px auto;
+  /* 摆放位置 */
+  float: right;
+}
+
+/* 支付按钮样式 */
+#app #page_pay .warp .container .row .col-12 .card .card-body .tabs .tab-content .tab-pane .row .col .card-footer .btn{
+  color: #FFB400 !important;
+  border-color: #FFB400 !important;
+  }
+  #app .swiper_img .swiper-imgs
+{
+	width: 100%;
+}
+  #app .swiper_img .carousel 
+{
+	width: 100%;
+}
+
+/* 购物车里的详情页下面的图片 */
+#app #goods_details .warp .container .row .col-12 .pr-md-2 .card_bottom_goods .goods_desc_box .goods_detail_editor p img{
+ max-width: 920px; 
+}

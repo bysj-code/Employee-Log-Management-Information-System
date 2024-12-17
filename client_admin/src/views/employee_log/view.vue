@@ -1,0 +1,341 @@
+<template>
+	<el-main class="bg edit_wrap">
+		<el-form ref="form" :model="form" status-icon label-width="120px" v-if="is_view()">
+
+							<el-col v-if="user_group === '管理员' || $check_field('get','log_title') || $check_field('add','log_title') || $check_field('set','log_title')" :xs="24" :sm="12" :lg="8" class="el_form_item_warp">
+				<el-form-item label="日志标题" prop="log_title">
+												<el-input id="log_title" v-model="form['log_title']" placeholder="请输入日志标题"
+							  v-if="user_group === '管理员' || (form['employee_log_id'] && $check_field('set','log_title')) || (!form['employee_log_id'] && $check_field('add','log_title'))" :disabled="disabledObj['log_title_isDisabled']"></el-input>
+					<div v-else-if="$check_field('get','log_title')">{{form['log_title']}}</div>
+											</el-form-item>
+			</el-col>
+								<el-col v-if="user_group === '管理员' || $check_field('get','employee_id') || $check_field('add','employee_id') || $check_field('set','employee_id')" :xs="24" :sm="12" :lg="8" class="el_form_item_warp">
+				<el-form-item label="员工工号" prop="employee_id">
+																		<div v-if="user_group !== '管理员'">
+							{{ get_user_session_employee_id(form['employee_id']) }}
+							<!--<el-input id="business_name" v-model="form['employee_id']" placeholder="请输入员工工号"-->
+							<!--v-if="user_group === '管理员' || (form['employee_log_id'] && $check_field('set','employee_id')) || (!form['employee_log_id'] && $check_field('add','employee_id'))" :disabled="disabledObj['employee_id_isDisabled']"></el-input>-->
+							<!--<div v-else-if="$check_field('get','employee_id')">{{form['employee_id']}}</div>-->
+							<el-select v-if="user_group === '管理员' || (form['employee_log_id'] && $check_field('set','employee_id')) || (!form['employee_log_id'] && $check_field('add','employee_id'))" id="employee_id" v-model="form['employee_id']" :disabled="disabledObj['employee_id_isDisabled']">
+								<el-option v-for="o in list_user_employee_id" :key="o['username']" :label="o['nickname'] + '-' + o['username']"
+										   :value="o['user_id']">
+								</el-option>
+							</el-select>
+							<el-select v-else-if="$check_field('get','employee_id')" id="employee_id" v-model="form['employee_id']" :disabled="true">
+								<el-option v-for="o in list_user_employee_id" :key="o['username']" :label="o['nickname'] + '-' + o['username']"
+										   :value="o['user_id']">
+								</el-option>
+							</el-select>
+						</div>
+						<el-select v-else id="employee_id" v-model="form['employee_id']" :disabled="disabledObj['employee_id_isDisabled']">
+							<el-option v-for="o in list_user_employee_id" :key="o['username']" :label="o['nickname'] + '-' + o['username']"
+									   :value="o['user_id']">
+							</el-option>
+						</el-select>
+																</el-form-item>
+			</el-col>
+								<el-col v-if="user_group === '管理员' || $check_field('get','employee_name') || $check_field('add','employee_name') || $check_field('set','employee_name')" :xs="24" :sm="12" :lg="8" class="el_form_item_warp">
+				<el-form-item label="员工姓名" prop="employee_name">
+												<el-input id="employee_name" v-model="form['employee_name']" placeholder="请输入员工姓名"
+							  v-if="user_group === '管理员' || (form['employee_log_id'] && $check_field('set','employee_name')) || (!form['employee_log_id'] && $check_field('add','employee_name'))" :disabled="disabledObj['employee_name_isDisabled']"></el-input>
+					<div v-else-if="$check_field('get','employee_name')">{{form['employee_name']}}</div>
+											</el-form-item>
+			</el-col>
+								<el-col v-if="user_group === '管理员' || $check_field('get','record_time') || $check_field('add','record_time') || $check_field('set','record_time')" :xs="24" :sm="12" :lg="8" class="el_form_item_warp">
+				<el-form-item label="记录时间" prop="record_time">
+								<el-date-picker :disabled="disabledObj['record_time_isDisabled']" v-if="user_group === '管理员' || (form['employee_log_id'] && $check_field('set','record_time')) || (!form['employee_log_id'] && $check_field('add','record_time'))" id="record_time"
+						v-model="form['record_time']" type="date" placeholder="选择日期">
+					</el-date-picker>
+					<div v-else-if="$check_field('get','record_time')">{{form['record_time']}}</div>
+							</el-form-item>
+			</el-col>
+								<el-col v-if="user_group === '管理员' || $check_field('get','content_details') || $check_field('add','content_details') || $check_field('set','content_details')" :xs="24" :sm="12" :lg="8" class="el_form_item_warp">
+				<el-form-item label="内容详情" prop="content_details">
+								<el-input type="textarea" id="content_details" v-model="form['content_details']" placeholder="请输入内容详情"
+						v-if="user_group === '管理员' || (form['employee_log_id'] && $check_field('set','content_details')) || (!form['employee_log_id'] && $check_field('add','content_details'))" :disabled="disabledObj['content_details_isDisabled']"></el-input>
+					<div v-else-if="$check_field('get','content_details')">{{form['content_details']}}</div>
+							</el-form-item>
+			</el-col>
+					
+	
+	
+	
+	
+	
+	
+			<el-col :xs="24" :sm="12" :lg="8" class="el_form_btn_warp">
+				<el-form-item>
+					<el-button type="primary" @click="submit()">提交</el-button>
+					<el-button @click="cancel()">取消</el-button>
+				</el-form-item>
+			</el-col>
+
+		</el-form>
+	</el-main>
+</template>
+
+<script>
+	import mixin from "@/mixins/page.js";
+
+	export default {
+		mixins: [mixin],
+		data() {
+			return {
+				field: "employee_log_id",
+				url_add: "~/api/employee_log/add?",
+				url_set: "~/api/employee_log/set?",
+				url_get_obj: "~/api/employee_log/get_obj?",
+				url_upload: "~/api/employee_log/upload?",
+
+				query: {
+					"employee_log_id": 0,
+				},
+
+				form: {
+								"log_title":  '', // 日志标题
+										"employee_id": 0, // 员工工号
+										"employee_name":  '', // 员工姓名
+										"record_time":  '', // 记录时间
+										"content_details":  '', // 内容详情
+											"employee_log_id": 0, // ID
+						
+				},
+				disabledObj:{
+								"log_title_isDisabled": false,
+										"employee_id_isDisabled": false,
+										"employee_name_isDisabled": false,
+										"record_time_isDisabled": false,
+										"content_details_isDisabled": false,
+										},
+
+	
+		
+					// 用户列表
+				list_user_employee_id: [],
+						// 用户组
+				group_user_employee_id: "",
+				
+		
+		
+	
+			}
+		},
+		methods: {
+
+
+	
+	
+			
+	
+				/**
+			 * 获取员工用户列表
+			 */
+			async get_list_user_employee() {
+                // if(this.user_group !== "管理员" && this.form["employee_id"] === 0) {
+                //     this.form["employee_id"] = this.user.user_id;
+                // }
+                var json = await this.$get("~/api/user/get_list?user_group=员工");
+                if(json.result && json.result.list){
+                    this.list_user_employee_id = json.result.list;
+                }
+                else if(json.error){
+                    console.error(json.error);
+                }
+			},
+					/**
+			 * 获取员工用户组
+			 */
+			async get_group_user_employee_id() {
+							this.form["employee_id"] = this.user.user_id;
+							var json = await this.$get("~/api/user_group/get_obj?name=员工");
+				if(json.result && json.result.obj){
+					this.group_user_employee_id = json.result.obj;
+				}
+				else if(json.error){
+					console.error(json.error);
+				}
+			},
+			get_user_session_employee_id(id){
+				var _this = this;
+				var user_id = {"user_id":id}
+				var url = "~/api/"+_this.group_user_employee_id.source_table+"/get_obj?"
+				this.$get(url, user_id, function(res) {
+					if (res.result && res.result.obj) {
+						var arr = []
+						for (let key in res.result.obj) {
+							arr.push(key)
+						}
+						var arrForm = []
+									for (let key in _this.form) {
+							arrForm.push(key)
+						}
+												_this.form["employee_id"] = id
+									_this.disabledObj['employee_id' + '_isDisabled'] = true
+						for (var i=0;i<arr.length;i++){
+						  if (arr[i]!=='examine_state' && arr[i]!=='examine_reply') {
+							for (var j = 0; j < arrForm.length; j++) {
+							  if (arr[i] === arrForm[j]) {
+								if (arr[i] !== "employee_id") {
+			                      _this.form[arrForm[j]] = res.result.obj[arr[i]]
+			                      _this.disabledObj[arrForm[j] + '_isDisabled'] = true
+								  break;
+								} else {
+								  _this.disabledObj[arrForm[j] + '_isDisabled'] = true
+								}
+							  }
+							}
+						  }
+						}
+					}
+				});
+			},
+					get_user_employee_id(id){
+				var obj = this.list_user_employee_id.getObj({"user_id":id});
+				var ret = "";
+				if(obj){
+					if(obj.nickname){
+						ret = obj.nickname;}
+					else{
+						ret = obj.username;
+					}
+				}
+				return ret;
+			},
+			
+	
+			
+	
+			
+	
+		
+			/**
+			 * 获取对象之前
+			 * @param {Object} param
+			 */
+			get_obj_before(param) {
+				var form = "";
+																						
+				if(this.form && form){
+					Object.keys(this.form).forEach(key => {
+						Object.keys(form).forEach(dbKey => {
+							// if(dbKey === "charging_standard"){
+							// 	this.form['charging_rules'] = form[dbKey];
+							// 	this.disabledObj['charging_rules_isDisabled'] = true;
+							// };
+							if(key === dbKey){
+								this.disabledObj[key+'_isDisabled'] = true;
+							}
+						})
+					})
+				}
+								        if (this.form["record_time"].indexOf("-")===-1){
+          this.form["record_time"] = this.$toTime(parseInt(this.form["record_time"]),"yyyy-MM-dd")
+        }
+							$.db.del("form");
+				return param;
+			},
+
+			/**
+			 * 获取对象之后
+			 * @param {Object} json
+			 * @param {Object} func
+			 */
+			get_obj_after(json, func){
+
+
+											        if(this.form["record_time"]=="0000-00-00"){
+          this.form["record_time"] = null;
+        }
+				if(parseInt(this.form["record_time"]) > 9999){
+					this.form["record_time"] = this.$toTime(parseInt(this.form["record_time"]),"yyyy-MM-dd")
+				}
+					
+
+			},
+
+			/**
+			 * 提交前验证事件
+			 * @param {Object} 请求参数
+			 * @return {String} 验证成功返回null, 失败返回错误提示
+			 */
+			submit_check(param) {
+				let msg = null
+																					return msg;
+			},
+
+			is_view(){
+				var bl = this.user_group == "管理员";
+
+				if(!bl){
+					bl = this.$check_action('/employee_log/table','add');
+					console.log(bl ? "你有表格添加权限视作有添加权限" : "你没有表格添加权限");
+				}
+				if(!bl){
+					bl = this.$check_action('/employee_log/table','set');
+					console.log(bl ? "你有表格添加权限视作有修改权限" : "你没有表格修改权限");
+				}
+				if(!bl){
+					bl = this.$check_action('/employee_log/view','add');
+					console.log(bl ? "你有视图添加权限视作有添加权限" : "你没有视图添加权限");
+				}
+				if(!bl){
+					bl = this.$check_action('/employee_log/view','set');
+					console.log(bl ? "你有视图修改权限视作有修改权限" : "你没有视图修改权限");
+				}
+				if(!bl){
+					bl = this.$check_action('/employee_log/view','get');
+					console.log(bl ? "你有视图查询权限视作有查询权限" : "你没有视图查询权限");
+				}
+
+				console.log(bl ? "具有当前页面的查看权，请注意这不代表你有字段的查看权" : "无权查看当前页，请注意即便有字段查询权限没有页面查询权限也不行");
+
+				return bl;
+			},
+			/**
+			 * 上传文件
+			 * @param {Object} param
+			 */
+			uploadimg(param) {
+				this.uploadFile(param.file, "avatar");
+			},
+
+		},
+		created() {
+							this.get_list_user_employee();
+					this.get_group_user_employee_id();
+											},
+	}
+</script>
+
+<style>
+	.avatar-uploader .el-upload {
+		border: 1px dashed #d9d9d9;
+		border-radius: 6px;
+		cursor: pointer;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.avatar-uploader .el-upload:hover {
+		border-color: #409EFF;
+	}
+
+	.avatar-uploader-icon {
+		font-size: 28px;
+		color: #8c939d;
+		width: 178px;
+		height: 178px;
+		line-height: 178px;
+		text-align: center;
+	}
+
+	.avatar {
+		width: 178px;
+		height: 178px;
+		display: block;
+	}
+
+
+
+
+</style>
